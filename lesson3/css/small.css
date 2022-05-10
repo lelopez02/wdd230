@@ -1,5 +1,5 @@
 :root {
-  --max-width-page: 900px;
+  --max-width-page: 1300px;
 }
 
 header {
@@ -9,11 +9,15 @@ header {
   align-items: center;
   justify-content: center;
   padding: 15px 0;
-  max-width: 700px;
+  max-width: 900px;
   margin: 0 auto;
+}
+.menu {
+  font-size: 20px;
 }
 #menu ul li a:hover {
   background-color: #ffd400;
+  border-radius: 12px;
 }
 
 img {
