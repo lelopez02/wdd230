@@ -5,7 +5,7 @@ header {
   align-items: center;
   justify-content: center;
   padding: 15px 0;
-  max-width: 1000px;
+  max-width: 1500px;
   margin: 0 auto;
   list-style-type: none;
 }
@@ -26,7 +26,6 @@ ul li a {
   color: #fff;
   text-align: center;
   padding: 2rem;
-
   font-size: 15px;
   margin: 10px 0;
   list-style-type: none;
@@ -46,15 +45,15 @@ h2,
 h3 {
   font-family: "Source Sans Pro", sans-serif;
 }
-
-.logo {
-  width: 300px;
-  margin: 0 auto;
-  margin-top: -3em;
-}
 p,
 a {
   font-family: "Poppins", sans-serif;
+}
+
+.logo {
+  width: 280px;
+  margin: 0 auto;
+  margin-top: -3em;
 }
 
 main {
@@ -86,7 +85,9 @@ footer a:visited {
   text-align: center;
   flex-wrap: wrap;
 }
-
+.tip {
+  text-align: center;
+}
 section {
   padding: 0.5rem 0.7rem;
   width: 250px;

@@ -1,0 +1,47 @@
+@media only screen and (min-width: 37.5em) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+  }
+
+  nav ul li {
+    display: flex;
+  }
+
+  .motto {
+    font-size: medium;
+  }
+
+  picture img {
+    width: 150px;
+    align-items: center;
+  }
+
+  .navigation li {
+    display: block;
+  }
+
+  .navigation li:first-child {
+    display: none;
+  }
+  .navigation {
+    display: flex;
+    border-left: 1px solid #376996;
+    border-top: none;
+  }
+
+  nav ul li a {
+    border: none;
+    border-right: 1px solid #376996;
+  }
+
+  main .placeholder {
+    width: 600px;
+    margin: 0.5rem auto;
+  }
+}
