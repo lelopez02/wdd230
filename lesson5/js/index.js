@@ -1,7 +1,7 @@
 const input = document.querySelector("#favchap");
 const button = document.querySelector("button");
 const uList = document.querySelector(".list");
-const wrongMessage = document.querySelector(".wrong-message");
+const wrongMessage = document.querySelector(".wrong-chapter");
 
 const bookOfMormon = {
   FirstNephi: 22,
@@ -25,7 +25,7 @@ button.addEventListener("click", () => {
   const li = document.createElement("li");
   const but = document.createElement("button");
 
-  // please, see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/from#sequence_generator_range
+  
   const range = (start, stop, step) =>
     Array.from(
       { length: (stop - start) / step + 1 },
