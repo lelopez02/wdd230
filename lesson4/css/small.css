@@ -11,6 +11,13 @@ h1 {
   font-family: "Source Sans Pro", sans-serif;
 }
 
+.links {
+  display: flex;
+  height: 100px;
+  width: 5px;
+  padding-bottom: 1%;
+  margin-left: 10px;
+}
 nav {
   background-color: #2565ae;
   padding: 0.1rem;
