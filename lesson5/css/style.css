@@ -82,24 +82,13 @@ li p {
   font-size: 1.2em;
 }
 
-.btn-delete:hover {
-  cursor: pointer;
-  background-color: lightseagreen;
-}
-
 .btn-add {
   padding: 5px 15px;
   border: none;
   color: white;
   font-family: fantasy;
-  background-color: teal;
   font-size: 1.4rem;
   outline: none;
-}
-
-.btn-add:hover {
-  cursor: pointer;
-  background-color: darkcyan;
 }
 
 .empty {
