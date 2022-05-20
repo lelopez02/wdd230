@@ -1,63 +1,43 @@
-const input = document.querySelector("#favchap");
-const button = document.querySelector("button");
-const uList = document.querySelector(".list");
-const wrongMessage = document.querySelector(".wrong-chapter");
+const input = document.querySelector("input");
+const addBtn = document.querySelector(".btn-add");
+const ul = document.querySelector("ul");
+const empty = document.querySelector(".empty");
 
-const bookOfMormon = {
-  FirstNephi: 22,
-  SecondNephi: 33,
-  Jabob: 7,
-  Enos: 1,
-  Jarom: 1,
-  Omni: 1,
-  WordsofMormon: 1,
-  Mosiah: 29,
-  Alma: 63,
-  Helaman: 16,
-  ThirdNephi: 30,
-  FourthNephi: 1,
-  Mormon: 9,
-  Ether: 15,
-  Moroni: 10,
-};
+addBtn.addEventListener("click", (e) => {
+  e.preventDefault();
 
-button.addEventListener("click", () => {
-  const li = document.createElement("li");
-  const but = document.createElement("button");
+  const text = input.value;
 
-  
-  const range = (start, stop, step) =>
-    Array.from(
-      { length: (stop - start) / step + 1 },
-      (_, i) => start + i * step
-    );
+  if (text !== "") {
+    const li = document.createElement("li");
+    const p = document.createElement("p");
+    p.textContent = text;
 
-  // creates a new variable from the input value
-  const inputItself = input.value;
-  // replaces the numbers of the given input and strips spaces
-  const inputNoNumbers = inputItself.replace(/[0-9\s]/g, "").trim();
-  // gets the range of the number of chapters of the given book
-  const rangeInput = range(1, bookOfMormon[inputNoNumbers] + 1, 1);
-  // gets only the number of the chapter
-  const numberInput = inputItself.replace(/[^\d.-]/g, "");
+    li.appendChild(p);
+    li.appendChild(addDeleteBtn());
+    ul.appendChild(li);
 
-  if (
-    bookOfMormon[inputNoNumbers] !== undefined &&
-    rangeInput[numberInput] !== undefined
-  ) {
-    li.textContent = input.value;
-    uList.appendChild(li);
-    but.textContent = "❌";
-    li.appendChild(but);
     input.value = "";
-    wrongMessage.style.display = "none";
-  } else {
-    wrongMessage.style.display = "block";
+    empty.style.display = "none";
   }
-
-  but.onclick = function (e) {
-    uList.removeChild(li);
-  };
-
-  input.focus();
 });
+
+function addDeleteBtn() {
+  const deleteBtn = document.createElement("button");
+
+  deleteBtn.textContent = "X";
+  deleteBtn.className = "btn-delete";
+
+  deleteBtn.addEventListener("click", (e) => {
+    const item = e.target.parentElement;
+    ul.removeChild(item);
+
+    const items = document.querySelectorAll("li");
+
+    if (items.length === 0) {
+      empty.style.display = "block";
+    }
+  });
+
+  return deleteBtn;
+}
