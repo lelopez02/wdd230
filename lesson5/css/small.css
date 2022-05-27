@@ -12,10 +12,10 @@ header {
   background-color: #087f8c;
   align-items: center;
 }
-.navigation ul li a:hover {
+.navigation a:hover {
   background-color: #ffd400;
   border-radius: 12px;
-  padding: 30px;
+  padding: 20px;
   list-style-type: none;
 }
 h1 {
@@ -41,38 +41,29 @@ main h2 {
   color: #087f8c;
   font-family: "Source Sans Pro", sans-serif;
 }
-
-footer {
-  background-color: #087f8c;
-  width: 100%;
-  text-align: center;
-  padding: 0.6rem 0;
-  color: white;
-  margin-top: 1.5rem;
-  font-family: "Poppins", sans-serif;
-}
-
-footer a:link,
-footer a:visited {
-  color: white;
-}
-
-.float-imge {
+.float-image {
   max-width: 100%;
   margin: 0 auto;
   position: relative;
 }
 
-#float-imge a {
+#float-image a {
   bottom: 1rem;
   right: 1rem;
   margin-left: 1rem;
 }
 
+h3 {
+  text-align: center;
+  color: #087f8c;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 30px;
+}
+
 .article-sec {
   background-color: whitesmoke;
   margin: 40px 0 auto;
-  max-width: 700px;
+  max-width: 600px;
   padding: 20px;
   font-family: "Poppins", sans-serif;
 }
@@ -80,7 +71,7 @@ footer a:visited {
 .article-sec img {
   margin: 0px 0px 20px auto;
   width: 100%;
-  float: right;
+  float: center;
 }
 
 .before-footer {
@@ -98,7 +89,21 @@ footer a:visited {
   margin-left: 40px;
   color: white;
 }
-
 .hide {
   display: none;
+}
+
+footer {
+  background-color: #087f8c;
+  width: 100%;
+  text-align: center;
+  padding: 0.6rem 0;
+  color: white;
+  margin-top: 1.5rem;
+  font-family: "Poppins", sans-serif;
+}
+
+footer a:link,
+footer a:visited {
+  color: white;
 }
