@@ -66,8 +66,25 @@
     <main>
       <h2>Welcome to Buenos Aires</h2>
       <section class="float-image">
-        <img src="images/city-buenosaires.jpg" alt="city image">
+        <picture>
+          <source
+            media="(min-width: 500px) and (max-width: 799px)"
+            srcset="images/wdd230-800.jpg"
+          />
+          <source
+            media="(min-width: 800px)"
+            srcset="images/wdd230-1200.jpg"
+          />
+        <img src="images/wdd230-480.jpg" alt="city image">
         <a href="#">Join to Chamber</a>
+        <div class="floated">
+          <h3>Weather Summary</h3>
+          <p>Currently: Sunny</p>
+          <p>Hight: <span class="hight">50</span> °F</p>
+          <p>Wind Chill: <span class="windchill"></span>°F</p>
+          <p>Humidity: 69%</p>
+          <p>Wind speed: <span class="wind">12</span>mph</p>
+        </div>
       </section>
       <section class="article-sec">
         <h3>Lorem Ipsum</h3>
