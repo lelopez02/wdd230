@@ -1,4 +1,27 @@
 const imagesDataSrc = document.querySelectorAll("img[data-src]");
+const daysVisited = document.querySelector(".days-visited");
+
+const today = new Date();
+const year = today.getFullYear();
+const day = today.getDay();
+
+const timestamp = today.getTime();
+
+const options = {
+  weekday: "long",
+  year: "numeric",
+  month: "long",
+  day: "numeric",
+};
+
+document.addEventListener("DOMContentLoaded", () => {
+  populateStorage();
+});
+
+
+const setStyles = () => {
+  localStorage.setItem("daysVisited", timestamp);
+};
 
 const loadImages = (image) => {
   image.setAttribute("src", image.getAttribute("data-src"));
@@ -23,4 +46,30 @@ if ("IntersectionObserver" in window) {
   imagesDataSrc.forEach((img) => {
     loadImages(img);
   });
+}
+
+document.querySelector(".formatted-time").textContent =
+  today.toLocaleDateString("en-UK", options);
+
+const hamburger = document.querySelector(".ham");
+const mainnav = document.querySelector(".navigation");
+
+hamburger.addEventListener(
+  "click",
+  () => {
+    mainnav.classList.toggle("responsive");
+  },
+  false
+);
+
+window.onresize = () => {
+  if (window.innerWidth > 600) mainnav.classList.remove("responsive");
+};
+
+const banner = () => {
+  document.querySelector(".hide").style.display = "block";
+};
+
+if (day == 5) {
+  banner();
 }
