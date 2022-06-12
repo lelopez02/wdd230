@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>wd230 - lesson8</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600&family=Nunito&family=Rubik&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&family=Source+Sans+Pro&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <picture class="logo">
+        <img src="images/page-logo.png" alt="logo-ba" />
+      </picture>
+      <div class="headings">
+        <h1>Buenos Aires Chamber of commerce</h1>
+      </div>
+    </header>
+    <nav>
+      <ul class="navigation">
+        <li>
+          <a class="ham" href="#">≡ Menu</a>
+        </li>
+        <li>
+          <a
+            href="https://lelopez02.github.io/wdd230/index.html"
+            class="linked active"
+            >Home</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://lelopez02.github.io/wdd230/lesson7/discover.html"
+            class="linked active"
+            >Discover</a
+          >
+        </li>
+        <li>
+          <a href="#">Directory</a>
+        </li>
+        <li>
+          <a href="#">Join</a>
+        </li>
+        <li>
+          <a href="#">Contact</a>
+        </li>
+      </ul>
+    </nav>
+
+    <main>
+      <h2>Join Us</h2>
+
+      <div class="container-join">
+        <form method="get" action="thanks.html">
+          <fieldset>
+            <legend>Personal Information</legend>
+            <label class="top"
+              >Name*
+              <input type="text" name="fname" pattern="[A-Za-z]{5,}" required
+            /></label>
+            <label class="top"
+              >Usurname*
+              <input
+                type="text"
+                name="fusurname"
+                pattern="[A-Za-z]{5,}"
+                required
+            /></label>
+            <label class="top"
+              >Phone*
+              <input type="tel" name="phone" placeholder="999999999" required
+            /></label>
+            <label class="top"
+              >Email
+              <input type="email" name="email" placeholder="someone@gmail.com"
+            /></label>
+          </fieldset>
+
+          <fieldset>
+            <legend>Bussiness Details</legend>
+
+            <label for="bussinessList" class="top"
+              >Business Name/Title <input list="bussinessList" name="bussiness"
+            /></label>
+            <datalist id="Administrator">
+              <option value="developer"></option>
+              <option value="graphic designer"></option>
+              <option value="Accountant"></option>
+              <option value="Tourism technician"></option>
+              <option value="Architect"></option>
+            </datalist>
+          </fieldset>
+
+          <fieldset>
+            <legend>Membership Level</legend>
+
+            <label class="sbs"
+              ><input type="radio" name="audience" value="Non-Profit" />
+              Non-Profit Membership: Non profit organizations and there is no
+              fee.
+            </label>
+            <label class="sbs"
+              ><input type="radio" name="audience" value="Bronze" /> Bronze
+              Membership: $5 per month</label
+            >
+            <label class="sbs"
+              ><input type="radio" name="audience" value="Silver" /> Silver
+              Membership: $10 per month</label
+            >
+            <label class="sbs"
+              ><input type="radio" name="audience" value="Gold" /> Gold
+              Membership: $15 per month</label
+            >
+
+            <label class="top">Submmit</label
+            ><textarea id="comments" name="comments"></textarea>
+          </fieldset>
+
+          <input type="submit" value="Join" class="submitBtn" />
+        </form>
+      </div>
+    </main>
+
+    <footer>
+      &copy; |
+      <a class="link" target="_blank" href="https://www.byui.edu/online"
+        >BYU-Idaho Online</a
+      >
+      | Leandro Lopez
+    </footer>
+  </body>
+</html>
