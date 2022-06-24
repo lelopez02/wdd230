@@ -2,13 +2,10 @@ img {
   max-width: 100%;
 }
 
-.logo img {
+picture img {
   width: 100px;
 }
-header .headings {
-  flex-direction: column;
-  margin-left: 3em;
-}
+
 header {
   display: flex;
   justify-content: center;
@@ -45,27 +42,9 @@ nav a {
   font-family: "Poppins", sans-serif;
 }
 
-main .wireframe {
-  text-align: center;
-  margin-top: 10px;
-}
-
-.navigation li {
-  display: none;
-  padding: 0.6rem 0;
-}
-
-.navigation li:first-child {
-  display: block;
-}
-
-.responsive li {
-  display: block;
-}
-
 main h2 {
   text-align: center;
-  color: #131200;
+  color: #087f8c;
   font-family: "Source Sans Pro", sans-serif;
 }
 
@@ -75,11 +54,66 @@ footer {
   text-align: center;
   padding: 0.6rem 0;
   color: white;
-  /* margin-top: 1.5rem; */
+  margin-top: 1.5rem;
   font-family: "Poppins", sans-serif;
+}
+
+.formatted-time {
+  padding-top: 0.8rem;
 }
 
 footer a:link,
 footer a:visited {
   color: white;
+}
+
+.linked {
+  background-color: #131200;
+  border: none;
+  transition: background-color 0.3s;
+}
+
+.linked::before {
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0.1rem;
+  background-color: #131200;
+  transition: width 0.3s 0.1s;
+}
+
+.linked::after {
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 0.1rem;
+  background-color: #131200;
+  transition: width 0.3s 0.1s;
+}
+
+.linked:hover {
+  border-radius: 2px;
+  padding: 4px;
+  color: #131200;
+  background-color: white;
+}
+
+.linked:hover::before {
+  width: 100%;
+}
+
+.linked:hover::after {
+  width: 100%;
+}
+
+.container {
+  display: grid;
+  padding: 10px;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.card {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
 }

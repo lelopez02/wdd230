@@ -1,6 +1,11 @@
+const imagesDataSrc = document.querySelectorAll("img[data-src]");
+const daysVisited = document.querySelector(".days-visited");
+
 const today = new Date();
 const year = today.getFullYear();
 const day = today.getDay();
+
+const timestamp = today.getTime();
 
 const options = {
   weekday: "long",
@@ -9,7 +14,39 @@ const options = {
   day: "numeric",
 };
 
-const baseURL = "https://byui-cit230.github.io/weather/data/towndata.json";
+document.addEventListener("DOMContentLoaded", () => {
+  populateStorage();
+});
+
+
+const setStyles = () => {
+  localStorage.setItem("daysVisited", timestamp);
+};
+
+const loadImages = (image) => {
+  image.setAttribute("src", image.getAttribute("data-src"));
+  image.onload = () => {
+    image.removeAttribute("data-src");
+  };
+};
+
+if ("IntersectionObserver" in window) {
+  const observer = new IntersectionObserver((items, observer) => {
+    items.forEach((item) => {
+      if (item.isIntersecting) {
+        loadImages(item.target);
+        observer.unobserve(item.target);
+      }
+    });
+  });
+  imagesDataSrc.forEach((img) => {
+    observer.observe(img);
+  });
+} else {
+  imagesDataSrc.forEach((img) => {
+    loadImages(img);
+  });
+}
 
 document.querySelector(".formatted-time").textContent =
   today.toLocaleDateString("en-UK", options);
@@ -36,54 +73,3 @@ const banner = () => {
 if (day == 5) {
   banner();
 }
-
-const townApi = async (key, value, nameImage) => {
-  try {
-    const response = await fetch(`${baseURL}`);
-    const wholeResponse = await response.json();
-    let theList = wholeResponse[key];
-    theList.forEach((element) => {
-      if (element.name === value) {
-        console.log(element.photo);
-        console.log(typeof element.photo);
-
-        const theCard = document.createElement("div");
-        theCard.setAttribute("class", "card");
-        let information = document.createElement("div");
-        let h2 = document.createElement("h2");
-        let motto = document.createElement("p");
-        motto.setAttribute("class", "motto-card");
-        let yearFounded = document.createElement("p");
-        yearFounded.setAttribute("class", "par-card");
-        let population = document.createElement("p");
-        population.setAttribute("class", "par-card");
-        let averageRainFall = document.createElement("p");
-        averageRainFall.setAttribute("class", "par-card");
-        let image = document.createElement("img");
-        h2.innerHTML = element.name;
-        motto.innerHTML = element.motto;
-        yearFounded.innerHTML = `Year Founded: ${element.yearFounded}`;
-        population.innerHTML = `Population: ${element.currentPopulation}`;
-        averageRainFall.innerHTML = `Annual Rain Fall: ${element.averageRainfall}`;
-        image.setAttribute("src", `images/${nameImage}`);
-        image.setAttribute("alt", `${element.name}'s photo`);
-        image.setAttribute("class", "card-photo");
-        information.appendChild(h2);
-        information.appendChild(motto);
-        information.appendChild(yearFounded);
-        information.appendChild(population);
-        information.appendChild(averageRainFall);
-        theCard.appendChild(information);
-        theCard.appendChild(image);
-        document.querySelector("section.the-section").appendChild(theCard);
-      }
-    });
-    return theList;
-  } catch (error) {
-    console.log(error);
-  }
-};
-
-townApi("towns", "Fish Haven", "fish-haven.webp");
-townApi("towns", "Preston", "preston.webp");
-townApi("towns", "Soda Springs", "soda-idaho.webp");

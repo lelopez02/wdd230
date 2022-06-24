@@ -1,0 +1,57 @@
+img {
+  max-width: 100%;
+}
+
+.logo img {
+  width: 100px;
+}
+header .headings {
+  flex-direction: column;
+  margin-left: 3em;
+}
+header {
+  display: flex;
+  justify-content: center;
+  background-color: #087f8c;
+  align-items: center;
+}
+header,
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: #087f8c;
+  align-items: center;
+  padding: 20px;
+}
+
+footer {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+header .headings {
+  flex-direction: column;
+  margin-left: 3em;
+}
+
+h1 {
+  font-size: 1.5rem;
+  color: #fff;
+  font-weight: bolder;
+  font-family: "Ubuntu", sans-serif;
+}
+
+h2 {
+  font-family: "Poppins", sans-serif;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+footer a:link,
+footer a:visited {
+  color: black;
+}
