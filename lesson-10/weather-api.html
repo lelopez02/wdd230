@@ -4,30 +4,46 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>OpenWeatherMap API Demostration</title>
-    <link rel="stylesheet"  href="styles/styles.css">
+    <title>Weather API Site</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=Roboto:wght@100&display=swap"
+      rel="stylesheet"
+    />
   </head>
-
   <body>
     <header>
-      <h1>OpenWeatherMap API Demostration</h1>
+        <h1>Weather API</h1>
+      </div>
+
+      <div class="date_time">
+        <p><span id="datetoday"></span></p>
+      </div>
     </header>
     <main>
-      <p>
-        The current temperature in in Fairbanks, Alaska is
-        <span id="current-temp"></span>& deg;F</p>
-        <2>Current Condition Icon</2>
+      <div id="weather-api">
+        <h1>OpenWeatherMap.org API Test</h1>
+        <p>
+          The current temperature in Fairbanks, Alaska is
+          <span id="current-temp"></span> &deg;F
+        </p>
+        <h2>Current Condition Icon</h2>
         <figure>
-            <img src="" alt="" id="weather-icon"/>
-            <figcaption></figcaption>
+          <img src="none" alt="none" id="weather-icon" />
+          <figcaption></figcaption>
         </figure>
+      </div>
     </main>
-    &copy; Weather |
-    <a class="link" target="_blank" href="https://www.byui.edu/online">
-      BYU-Idaho Online
-    </a>
-    | Leandro Lopez
-  </footer>
-  <script src="js/weatherapi.js"></script>
+    <footer>
+      &copy; Leandro Lopez |
+      <a class="link" target="_blank" href="https://www.byui.edu/online"
+        >BYU-Idaho Online</a
+      >
+      | WDD 230
+      <div class="formatted-time"></div>
+    </footer>
+    <script src="/wdd230/chamber/js/year.js" defer></script>
+    <script src="js/weatherapi.js" defer></script>
   </body>
 </html>
