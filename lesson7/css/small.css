@@ -106,26 +106,16 @@ footer a:visited {
   width: 100%;
 }
 
-.banner {
-  display: flex;
-  font-family: "Nunito", sans-serif;
-  width: 100%;
-  padding: 10px;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  background-color: #ff2e00;
-}
-
 .container {
   display: grid;
   padding: 10px;
   grid-template-columns: 1fr;
   gap: 1rem;
+  text-decoration: none;
 }
 
 .card {
   text-align: center;
   font-family: "Poppins", sans-serif;
-  text-decoration: none;
+  margin: 10px;
 }

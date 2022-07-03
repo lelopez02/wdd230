@@ -13,7 +13,12 @@ const options = {
   month: "long",
   day: "numeric",
 };
-
+function selectResponse() {
+  const s = document.querySelector("#selected");
+  const sel = document.querySelector("#selectbrowser");
+  s.style.display = "block";
+  s.textContent = sel.value;
+}
 
 const setStyles = () => {
   localStorage.setItem("daysVisited", timestamp);
@@ -36,10 +41,3 @@ window.onresize = () => {
   if (window.innerWidth > 600) mainnav.classList.remove("responsive");
 };
 
-const banner = () => {
-  document.querySelector(".hide").style.display = "block";
-};
-
-if (day == 5) {
-  banner();
-}
