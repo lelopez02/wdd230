@@ -127,4 +127,5 @@ footer a:visited {
 .card {
   text-align: center;
   font-family: "Poppins", sans-serif;
+  text-decoration: none;
 }
