@@ -1,0 +1,32 @@
+@media only screen and (min-width: 37.5em) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+  }
+
+  nav ul li {
+    display: flex;
+  }
+
+  .logo img {
+    width: 150px;
+    align-items: center;
+  }
+
+  .navigation li {
+    display: block;
+  }
+
+  .navigation li:first-child {
+    display: none;
+  }
+
+  .container-join {
+    width: 400px;
+  }
+}
