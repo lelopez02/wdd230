@@ -1,0 +1,71 @@
+:root {
+    --max-width-page: 700px;
+  }
+  
+  body {
+    margin: 0 auto;
+    max-width: var(--max-width-page);
+  }
+  main a:link,
+  main a:visited {
+    margin: 0.2rem 0;
+    color: royalblue;
+  }
+  header {
+    display: grid;
+    border-radius: 20px;
+    background-color: #2565ae;
+    width: 100%;
+    text-align: center;
+    height: 200px;
+  }
+  footer {
+    border-radius: 20px;
+    background-color: #2565ae;
+    width: 100%;
+    text-align: center;
+    height: 3em;
+    padding: 0.5rem 0;
+    color: white;
+  }
+  
+  footer a:link,
+  footer a:visited {
+    color: white;
+  }
+  
+  header img {
+    border-radius: 25px;
+    width: 170px;
+    padding: 1rem 1rem;
+    margin-left: 500px;
+  }
+  
+  h1 {
+    color: white;
+    font-family: sans-serif;
+    padding: 1.5rem 0;
+    font-size: 50px;
+    text-align: center;
+    margin-top: -150px;
+    margin-right: 100px;
+  }
+  
+  h2 {
+    font-size: 25px;
+    padding-left: 40px;
+    font-family: "Nunito", sans-serif;
+    word-spacing: 8px;
+  }
+  
+  p {
+    padding-left: 40px;
+    font-family: "Nunito", sans-serif;
+    word-spacing: 6px;
+  }
+  
+  ul {
+    line-height: 1.5;
+    padding-left: 50px;
+    font-size: 20px;
+  }
