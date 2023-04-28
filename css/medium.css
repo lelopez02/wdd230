@@ -1,0 +1,15 @@
+@media screen and (min-width: 32.5em) {
+    header img {
+        float: left;
+        border-radius: 40px;
+        filter: drop-shadow(5px 5px 4px rgb(37, 37, 37));
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+}

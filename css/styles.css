@@ -33,6 +33,10 @@
   footer a:visited {
     color: white;
   }
+
+  footer p {
+    color: yellow;
+  }
   
   header img {
     border-radius: 25px;
@@ -45,7 +49,7 @@
     color: white;
     font-family: sans-serif;
     padding: 1.5rem 0;
-    font-size: 50px;
+    font-size: 30px;
     text-align: center;
     margin-top: -150px;
     margin-right: 100px;
