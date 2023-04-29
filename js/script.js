@@ -1,3 +1,4 @@
+
 try {
     let options = {
         year: "numeric",
@@ -9,4 +10,7 @@ try {
     document.getElementById("currentdatetime").textContent = currentDateTime;
   } catch (e) {
     console.error(e);
-  }
+  };
+
+
+  document.querySelector("#copyrightYear").textContent = new Date().getFullYear();
