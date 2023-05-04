@@ -1,0 +1,85 @@
+:root{
+    --max-width-page: 900px
+}
+
+img {
+    width: 100%;
+}
+
+h1,
+h2 {
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+}
+
+.logo {
+    width: 250px;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 0;
+    max-width: 1500px;
+    margin: 0 auto;
+    list-style: none;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+}
+nav ul li a {
+    list-style-type: none;
+    list-style: none;
+    color: #fff;
+    text-align: center;
+    padding: 2rem;
+    font-size: 15px;
+    margin: 10px 0;
+    text-decoration: none;
+}
+
+p,
+a {
+    font-family: "Poppins", sans-serif;
+}
+
+
+main {
+    padding: 5rem;
+}
+
+footer {
+    background-color: #2565ae;
+    width: 100%;
+    text-align: center;
+    padding: 0.5rem 0;
+}
+
+footer a:link,
+footer a:visited {
+    color: white;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.tip {
+    text-align: center;
+}
+
+section {
+    padding: 0.5rem 0.7rem;
+    width: 250px;
+}
