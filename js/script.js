@@ -11,5 +11,5 @@ try {
   } catch (e) {
     console.error(e);
   };
-
+  let date = new Date();
   document.getElementById("#copyrightYear").textContent = date.getFullYear();
