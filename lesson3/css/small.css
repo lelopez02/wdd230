@@ -26,6 +26,7 @@ header {
     max-width: 1500px;
     margin: 0 auto;
     list-style: none;
+    
 }
 
 nav ul {
@@ -37,7 +38,7 @@ nav ul {
 nav ul li a {
     list-style-type: none;
     list-style: none;
-    color: #fff;
+    color: black;
     text-align: center;
     padding: 2rem;
     font-size: 15px;
