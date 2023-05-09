@@ -85,6 +85,10 @@ footer p {
     text-align: center;
 }
 
+.tipo {
+    text-align: center;
+}
+
 section {
     padding: 0.5rem 0.7rem;
     width: 250px;
