@@ -1,3 +1,10 @@
+const hamButton = document.querySelector('#ham');
+const navigation = document.querySelector('.navigation');
+
+hamButton.addEventListener('click', () => {
+	navigation.classList.toggle("responsive");
+});
+
 try {
     let options = {
         year: "numeric",
@@ -12,3 +19,14 @@ try {
   };
   let date = new Date();
   document.getElementById("#copyrightYear").textContent = date.getFullYear();
+
+  
+const datefield = document.querySelector("time");
+
+const now = new Date();
+const fulldate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(
+	now
+);
+
+datefield.textContent = fulldate;
+datemessage.innerHTML = `Today is <strong>${fulldate}</strong>. What are you going to do?`;

@@ -1,137 +1,174 @@
 header {
-    display: grid;
-    justify-content: center;
-    background-color: #3f3d53;
-    align-items: center;
-  }
-  .headings {
-    font-family: "Source Sans Pro";
-  }
+  display: flex;
+  justify-content: center;
+  background-color: #07354B;
+  align-items: center;
+  width: 100%;
+  list-style: none;
+  padding: 5px 0;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.headings {
+  display: flex;
+  flex-direction: column;
+  margin-left: .5rem;
+}
+
+.headings h1 {
+  font-family: Helvetica, sans-serif;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
+}
+
+.logo img {
+  padding: 2px;
+  width: 150px;
+  height: auto;
+}
+
+.headings {
+  font-family: "Source Sans Pro";
+}
+
+h1 {
+  font-size: 1em;
+  color: #fff;
+  font-weight: bolder;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+#ham {
+  display: block;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: fit-content;
+  font-size: 1.5rem;
+  padding: .5rem;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  background-color: #07354B;
+}
+
+.navigation li {
+  display: none;
+}
+
+.navigation li a {
+  padding: 1.15rem;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.navigation li a:hover {
+  background-color: #FCEB54;
+  box-shadow: 0 0 10px #FCEB54, o o 20px #FCEB54, 0 0 30px #FCEB54;
+  font-weight: 700;
+}
+
+.navigation.responsive li {
+  display: block;
+  width: 100%;
+}
+
+.navigation.responsive li a {
+  display: block;
+}
+
+.social {
+  margin-right: 1.5rem;
+}
+
+body {
+  width: 100%;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 100px 100px;
+  font-size: 0.8rem;
+  max-width: 940px;
+  padding: 3px 0;
+  margin: 0 auto;
+}
+
+.action {
+  grid-column: 2;
+  grid-row: 1 / 3;
+}
+
+.weather {
+  grid-column: 1;
+}
+
+.join {
+  grid-column: 1;
+  grid-row: 3;
+}
+
+.news {
+  grid-column: 2;
+  grid-row: 3;
+}
+
+.spotlight {
+  grid-column: 3;
+  grid-row: 1/4;
+  background-color: #000000;
+  border: 1px solid #434343;
+  padding: 0.5rem;
+}
+
+
+main div {
+  display: block;
+  background-color: #eee;
+  border: 1px solid #434343;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+
+footer {
+  background-color: #07354B;
+  width: 100%;
+  text-align: center;
+  padding: 0.5rem 0;
+  color: #8F8B92;
+}
+
+footer a:link,
+footer a:visited {
+  color: white;
+}
+
+.information p {
+  color: #fff;
   
-  .flexbox-header {
-    display: flexbox;
-    display: flex;
-  }
-  .date {
-    margin: 0.5rem;
-    border: 1px solid #bbb;
-    padding: 0.75rem;
-    background-color: #eee;
-    text-align: center;
-  }
-  
-  h1 {
-    font-size: 1em;
-    color: #fff;
-    font-weight: bolder;
-    font-family: "Source Sans Pro", sans-serif;
-  }
-  
-  #linkedin{
-    width: 25px;
-  }
-  
-  #facebook{
-    width: 43px;
-  
-    }
-  
-  
-  nav {
-    background-color: #2565ae;
-    padding: 0.1rem;
-  }
-  
-  nav a {
-    text-decoration: none;
-    font-weight: bold;
-    color: white;
-    font-family: "Poppins", sans-serif;
-    font-size: 25px;
-    
-  }
-  
-  nav ul li a:hover {
-    background-color: #ff6582;
-    color: #434343;
-    box-shadow: 0 0 10px #ff6582, o o 20px #ff6582, 0 0 30px #ff6582;
-    width: 100%;
-    display: block;
-  }
-  
-  .navigation li {
-    display: none;
-    padding: 0.6rem 0;
-  }
-  
-  .navigation li:first-child {
-    display: block;
-  }
-  
-  .responsive li {
-    display: block;
-  }
-  main {
-    max-width: 940px;
-      padding: 5px 0;
-      margin: 0 auto;
-  }
-  
-  main div {
-    display: block;
-    background-color: #eee;
-    border: 1px solid #434343;
-    padding: 1rem;
-    margin: 1rem;
-  } 
-  
-  .action {
-    color: #3f3d53;
-  }
-  
-  .princ {
-    width: 100%;
-    height: 100%;
-  }
-  .bot {
-    position: absolute;
-    bottom: 30px;
-    right: 30px;
-  }
-  button {
-    background-color: #ff6582;
-    padding: 5px 10px;
-    border-radius: 10px;
-    font-size: 1em;
-  }
-  
-  .material {
-    display: grid;
-    position: relative;
-    min-height: 10rem;
-    max-width: 100%;
-    border: solid 1px rgba(0, 0, 0, 0.5);
-    margin: .5rem;
-    padding: .5rem;
-  }
-  
-  main h2 {
-    text-align: center;
-    color: #2565ae;
-    font-family: "Source Sans Pro", sans-serif;
-  }
-  
-  
-  footer {
-    background-color: #3f3d53;
-    width: 100%;
-    text-align: center;
-    padding: 0.6rem 0;
-    color: white;
-    margin-top: 1.5rem;
-    font-family: "Poppins", sans-serif;
-  }
-  
-  .formatted-time {
-    padding-top: 0.8rem;
-  }
+}
+
+
+
+time {
+  font-size: 1.5rem;
+  padding: 5px;
+  color: yellow;
+}
+
+footer p {
+  color: yellow;
+}
