@@ -156,6 +156,14 @@ footer a:visited {
   color: white;
 }
 
+footer img {
+  width: 150px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
+}
+
 .information p {
   color: #fff;
   
