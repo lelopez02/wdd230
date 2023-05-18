@@ -24,9 +24,8 @@ try {
 const datefield = document.querySelector("time");
 
 const now = new Date();
-const fulldate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(
+const fulldateUK = new Intl.DateTimeFormat("en-UK", { dateStyle: "full" }).format(
 	now
 );
 
-datefield.textContent = fulldate;
-datemessage.innerHTML = `Today is <strong>${fulldate}</strong>. What are you going to do?`;
+datefield.textContent = fulldateUK;
