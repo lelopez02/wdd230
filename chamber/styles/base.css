@@ -154,13 +154,24 @@ main div {
   margin: 1rem;
 }
 
+footer img {
+  width: 150px;
+  height: auto;
+  align-items: center;
+  margin-left: 1rem;
+}
 
 footer {
+  display: flex;
   background-color: #07354B;
   width: 100%;
   text-align: center;
   padding: 0.5rem 0;
-  color: #8F8B92;
+  color: white;
+}
+
+footer p {
+  color: yellow;
 }
 
 footer a:link,
@@ -168,17 +179,9 @@ footer a:visited {
   color: white;
 }
 
-footer img {
-  width: 150px;
-  height: auto;
-  display: flex;
-  align-items: center;
-  margin-left: 1rem;
-}
 
 .information p {
-  color: #fff;
-  
+  color: white;
 }
 
 
@@ -189,6 +192,3 @@ time {
   color: yellow;
 }
 
-footer p {
-  color: yellow;
-}
