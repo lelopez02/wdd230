@@ -21,7 +21,7 @@ aside {
   width: 100%;
   text-align: center;
   align-self: flex-end;
-  
+
 }
 
 .headings {
@@ -56,7 +56,8 @@ h1 {
 /*Banner style*/
 
 .hide {
-  font-size: 1.5rem;/*
+  font-size: 1.5rem;
+  /*
   display: none;*/
   width: 100%;
   margin: 0.5rem;
@@ -254,8 +255,14 @@ main div {
   font-family: "Source Sans Pro", sans-serif;
 }
 
-.spotlight p,
-a {
+.spotlight p {
+  color: #000000;
+  font-size: 1.5rem;
+  text-align: center;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.spotlight a {
   color: #000000;
   font-size: 1.5rem;
   text-align: center;
@@ -320,7 +327,8 @@ footer a:visited {
   align-items: center;
 }
 
-.information p, a{
+.information p,
+a {
   color: white;
   font-size: 1rem;
   align-items: center;
