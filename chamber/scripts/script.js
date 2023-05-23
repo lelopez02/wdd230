@@ -41,4 +41,21 @@ try {
   
   
   datefieldUK.innerHTML = `<em>${fulldateUK}</em>`;
+
+  //BANNER code
+
+  window.onresize = () => {
+    if (window.innerWidth > 600) mainnav.classList.remove("responsive");
+  };
+  
+  const banner = () => {
+    document.querySelector(".hide").style.display = "block";
+  };
+  
+  
+  if (dayNumber === 1 || dayNumber === 2) {
+    banner();
+  }
+  
+  console.log (dayNumber);
   

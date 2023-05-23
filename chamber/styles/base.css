@@ -13,6 +13,8 @@ header {
 }
 
 aside {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1.5rem;
   color: yellow;
   margin: 3px auto;
   background-color: #315666;
@@ -49,6 +51,19 @@ h1 {
   color: #fff;
   font-weight: bolder;
   font-family: "Source Sans Pro", sans-serif;
+}
+
+/*Banner style*/
+
+.hide {
+  font-size: 1.5rem;/*
+  display: none;*/
+  width: 100%;
+  margin: 0.5rem;
+  border: 1px solid #bbb;
+  padding: 0.75rem;
+  background-color: #eee;
+  text-align: center;
 }
 
 #ham {
@@ -270,13 +285,43 @@ footer {
 
 footer p {
   color: yellow;
+  margin: 5px;
+
 }
+
+.footer-info {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-info img {
+  margin-right: 10px;
+  padding: 6px;
+}
+
+.footer-info span {
+  margin-right: 5px;
+}
+
+.footer-info p {
+  width: 100%;
+  margin-top: -120px;
+}
+
 
 footer a:link,
 footer a:visited {
   color: white;
 }
 
-.information p {
+.information {
+  margin-top: 70px;
+  align-items: center;
+}
+
+.information p, a{
   color: white;
+  font-size: 1rem;
+  align-items: center;
 }
