@@ -37,6 +37,7 @@ try {
   const fulldateUK = new Intl.DateTimeFormat("en-UK", {
     dateStyle: "full"
   }).format(now);
+  
   // "full" or long, medium, short options ... try them
   
   
