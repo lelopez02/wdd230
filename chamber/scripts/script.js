@@ -1,10 +1,27 @@
-const hamButton = document.querySelector('#ham');
-const navigation = document.querySelector('.navigation');
 //responsive ham
 
+const hamButton = document.querySelector('#ham');
+const navi = document.querySelector('.navi');
+
+
 hamButton.addEventListener('click', () => {
-	navigation.classList.toggle("responsive");
+	navi.classList.toggle("responsive");
 });
+
+ //current date on header
+
+ const datefieldUK = document.querySelector("aside");
+ const datemessage = document.querySelector("p");
+ 
+ 
+ const now = new Date();
+ const fulldate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(
+   now
+ );
+ const fulldateUK = new Intl.DateTimeFormat("en-UK", {
+   dateStyle: "full"
+ }).format(now);
+ 
 
 //current date on footer
 try {
@@ -24,20 +41,7 @@ try {
   let date = new Date();
   document.getElementById("#copyrightYear").textContent = date.getFullYear();
 
-  //current date on header
 
-  const datefieldUK = document.querySelector("aside");
-  const datemessage = document.querySelector("p");
-  
-  
-  const now = new Date();
-  const fulldate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(
-    now
-  );
-  const fulldateUK = new Intl.DateTimeFormat("en-UK", {
-    dateStyle: "full"
-  }).format(now);
-  
   // "full" or long, medium, short options ... try them
   
   

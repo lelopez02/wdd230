@@ -4,12 +4,29 @@
 		margin: auto;
 	}
 
+	aside {
+		font-family: "Source Sans Pro", sans-serif;
+		font-size: 1.5rem;
+		color: yellow;
+		background-color: #315666;
+		text-align: center;
+	}
+
+	.hide {
+        grid-column: 1/4;
+        grid-row: 1;
+    }
+
 	h1 {
 		font-size: 2.5rem;
 	}
 
 	.action h1 {
 		font-size: 3rem;
+	}
+
+	#social {
+		margin-right: 2rem;
 	}
 
 	#ham {
@@ -22,7 +39,7 @@
 
 	.navigation li {
 		display: block;
-		flex:  auto;
+		flex: auto;
 	}
 
 	main {
@@ -39,8 +56,6 @@
 		height: 100%;
 		object-fit: cover;
 	}
-
-
 
 	.event {
 		grid-row: 2;

@@ -7,7 +7,21 @@
     padding: 0 25px;
   }
 
+  #ham {
+    background-color: #07354B;
+    font-size: 1.5rem;
+    padding: .5rem;
+    font-size: 35px;
+  }
 
+  .social {
+    max-width: 40px;    
+  }
+
+  .hide {
+    grid-column: 1/3;
+    grid-row: 1;
+}
   nav ul {
     display: flex;
   }
@@ -43,7 +57,15 @@
     grid-row: 4;
     grid-column: 1/3;
     grid-template-columns: auto auto;
-}
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+
+  .spotlight {
+    grid-row: 4;
+    grid-column: 1/3;
+    grid-template-columns: auto auto;
+  }
 
 
 }
