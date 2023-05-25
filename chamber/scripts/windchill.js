@@ -7,9 +7,7 @@ function calcWindChill(t, s) {
         return "N/A";
     };
   };
-  
-  let t = document.querySelector(".temp").textContent;
-  
+    
   let s = document.querySelector(".wind-speed").textContent;
   
   document.querySelector(".wind-chill").textContent = 

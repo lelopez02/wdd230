@@ -1,6 +1,6 @@
 @media only screen and (min-width: 900px) {
 	body {
-		max-width: 110rem;
+		max-width: 115rem;
 		margin: auto;
 	}
 
@@ -23,10 +23,6 @@
 
 	.action h1 {
 		font-size: 3rem;
-	}
-
-	#social {
-		margin-right: 2rem;
 	}
 
 	#ham {
