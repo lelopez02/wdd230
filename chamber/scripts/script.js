@@ -26,14 +26,20 @@ const fulldateUK = new Intl.DateTimeFormat("en-UK", {
 
 //BANNER code
 
-const banner = document.querySelector("#hide");
-console.log(new Date().getDay());
+window.onresize = () => {
+  if (window.innerWidth > 600) mainnav.classList.remove("responsive");
+};
 
-switch (new Date().getDay()) {
-  case 1:
-  case 2:
-    banner.classList.toggle("banner-hide");
+const banner = () => {
+  document.querySelector(".hide").style.display = "block";
+};
+
+
+if (dayNumber === 1 || dayNumber === 2) {
+  banner();
 }
+
+console.log (dayNumber);
 
 
 //current date on footer
