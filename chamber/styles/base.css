@@ -107,8 +107,14 @@ h1 {
 .navigation.responsive li a {
   display: block;
 }
-
+/*
 .social {
+  max-width: 30px;
+  order: 3;
+  margin: 5px;
+}*/
+
+.media {
   max-width: 30px;
   order: 3;
   margin: 5px;
@@ -200,12 +206,14 @@ main div {
   background-color: #07354B;
 }
 
-.temp-div img{
-  width: 100%;
-  height: 100%;
-
+.temp-div picture img {
+  width: 40%;
+  grid-row: 2/3;
 }
 
+.temp-div picture {
+  margin: auto;
+}
 
 .weather h2,
 h3 {

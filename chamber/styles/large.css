@@ -84,6 +84,11 @@
 		margin: 10px auto;
 	}
 
+	.temp-div picture img {
+        width: 30%;
+		height: 30%;
+    }
+
 	.join {
 		grid-row: 4;
 		grid-column: 1;

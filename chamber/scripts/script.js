@@ -24,22 +24,6 @@ const fulldateUK = new Intl.DateTimeFormat("en-UK", {
   dateStyle: "full"
 }).format(now);
 
-//BANNER code
-
-window.onresize = () => {
-  if (window.innerWidth > 600) mainnav.classList.remove("responsive");
-};
-
-const banner = () => {
-  document.querySelector(".hide").style.display = "block";
-};
-
-
-if (dayNumber === 1 || dayNumber === 2) {
-  banner();
-}
-
-console.log (dayNumber);
 
 
 //current date on footer
@@ -65,3 +49,20 @@ document.getElementById("#copyrightYear").textContent = date.getFullYear();
 
 
 datefieldUK.innerHTML = `<em>${fulldateUK}</em>`;
+
+//BANNER code
+
+window.onresize = () => {
+  if (window.innerWidth > 600) mainnav.classList.remove("responsive");
+};
+
+const banner = () => {
+  document.querySelector(".hide").style.display = "block";
+};
+
+
+if (dayNumber === 1 || dayNumber === 2) {
+  banner();
+}
+
+console.log (dayNumber);
