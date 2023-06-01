@@ -1,3 +1,5 @@
+const imagesDataSrc = document.querySelectorAll("[data-src]");
+
 const imgOptions = {};
 
 const loadImages = (image) => {
@@ -25,3 +27,4 @@ if ("IntersectionObserver" in window) {
         loadImages(img);
     });
 }
+
