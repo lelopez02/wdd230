@@ -6,7 +6,7 @@
 
 	aside {
 		font-family: "Source Sans Pro", sans-serif;
-		font-size: 1.5rem;
+		font-size: 1.2rem;
 		color: yellow;
 		background-color: #315666;
 		text-align: center;
@@ -21,6 +21,11 @@
 		color: #eee;
 	}
 
+	.social {
+        max-width: 50px;
+
+    }
+
 	h1 {
 		font-size: 2.5rem;
 	}
@@ -34,12 +39,14 @@
 	}
 
 	.navigation {
+		
 		flex-direction: row;
 	}
 
 	.navigation li {
+		
 		display: block;
-		flex: auto;
+
 	}
 
 	main {

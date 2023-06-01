@@ -1,5 +1,5 @@
 /*HEADER style*/
-
+/*
 header {
   display: flex;
   justify-content: center;
@@ -10,18 +10,25 @@ header {
   padding: 5px 0;
   justify-content: space-between;
   margin: 0 auto;
+}*/
+header {
+  justify-content: center;
+  display: flex;
+  
+  align-items: center;
+  background-color: #07354B;
+  margin: 10px;
 }
 
 aside {
   font-family: "Source Sans Pro", sans-serif;
-  font-size: 1rem;
   color: yellow;
   margin: 3px auto;
-  background-color: #315666;
+  background-color: #07354B;
   width: 90%;
   text-align: center;
   align-self: flex-end;
-
+  flex-wrap: wrap;
 }
 
 .headings {
@@ -73,7 +80,12 @@ h1 {
   background-color: #07354B;
 }
 
+
+
 .navigation {
+  
+  align-self: flex-end;
+  width: 100%;
   display: flex;
   flex-direction: column;
   list-style: none;
@@ -85,6 +97,7 @@ h1 {
 }
 
 .navigation li a {
+  
   padding: 1rem;
   display: block;
   text-align: center;
@@ -107,14 +120,9 @@ h1 {
 .navigation.responsive li a {
   display: block;
 }
-/*
-.social {
-  max-width: 30px;
-  order: 3;
-  margin: 5px;
-}*/
 
-.media {
+
+.social {
   max-width: 30px;
   order: 3;
   margin: 5px;
