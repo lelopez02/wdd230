@@ -1,16 +1,5 @@
 /*HEADER style*/
-/*
-header {
-  display: flex;
-  justify-content: center;
-  background-color: #07354B;
-  align-items: center;
-  width: 100%;
-  list-style: none;
-  padding: 5px 0;
-  justify-content: space-between;
-  margin: 0 auto;
-}*/
+
 header {
   justify-content: center;
   display: flex;
@@ -108,7 +97,7 @@ h1 {
 
 .navigation li a:hover {
   background-color: #FCEB54;
-  box-shadow: 0 0 10px #FCEB54, o o 20px #FCEB54, 0 0 30px #FCEB54;
+  box-shadow: 0 0 10px #FCEB54, 0 0 20px #FCEB54, 0 0 30px #FCEB54;
   font-weight: 700;
 }
 

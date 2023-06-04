@@ -1,0 +1,63 @@
+@media only screen and (min-width: 900px) {
+	body {
+		max-width: 115rem;
+		margin: auto;
+	}
+
+	aside {
+		font-family: "Source Sans Pro", sans-serif;
+		font-size: 1.2rem;
+		color: yellow;
+		background-color: #315666;
+		text-align: center;
+	}
+
+	.hide {
+		grid-column: 1/4;
+		grid-row: 1;
+		text-align: center;
+		font-size: 1.2rem;
+		background-color: #315666;
+		color: #eee;
+	}
+
+	.social {
+        max-width: 50px;
+
+    }
+
+	h1 {
+		font-size: 2.5rem;
+	}
+	#ham {
+		display: none;
+	}
+
+
+
+	.navigation {
+		
+		flex-direction: row;
+	}
+
+	.navigation li {
+		
+		display: block;
+
+	}
+
+    section picture img {
+        width: 200px;
+        align-items: center;
+      }
+
+      main {
+        grid-template-columns: 1fr;
+        max-width: 75em;
+        margin: 0 auto;
+      }
+      
+      main picture img{
+        width: 700px;
+      }
+}
