@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Table</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+    <link rel="stylesheet" href="css/styletable.css" />
+</head>
+
+<body>
+    <header>
+        <div class="headings">
+            <h1>Week 8 - Activity: Table build</h1>
+        </div>
+    </header>
+    <main>
+        <h2>Sales Table</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="4" scope="colgroup">ACME wildwest services</th>
+                </tr>
+                <tr>
+                    <th scope="col"></th>
+                    <th scope="col">Basic</th>
+                    <th scope="col">Premium</th>
+                    <th scope="col">Deluxe</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">Feature 1</th>
+                    <td>✅</td>
+                    <td>✅</td>
+                    <td>✅</td>
+                    
+            
+                </tr>
+                <tr>
+                    <th scope="row">Feature 2</th>
+                    <td class="shadowed">❌</td>
+                    <td>✅</td>
+                    <td>✅</td>
+                    
+
+                </tr>
+                <tr>
+                    <th scope="row">Feature 3</th>
+                    <td>❌</td>
+                    <td>❌</td>
+                    <td>✅</td>
+                    
+             
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="4">Table 1: Account feature comparison</td>
+                </tr>
+            </tfoot>
+        </table>
+    </main>
+    <footer>
+        <div class="footer-info">
+            &copy;
+            <span id="#copyrightYear"></span>
+            <span>| Leandro Lopez | Bs.As. Argentina |</span>
+        </div>
+        </div>
+
+    </footer>
+</body>
+
+</html>
