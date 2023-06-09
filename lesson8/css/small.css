@@ -190,6 +190,12 @@ form label.top input:required:valid {
     width: 80%;
     height: 70%;
 }
+
+.benefits, h2 {
+  font-family: sans-serif;
+}
+
+
   
 /*FOOTER style*/
 
