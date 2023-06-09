@@ -195,6 +195,10 @@ form label.top input:required:valid {
   font-family: sans-serif;
 }
 
+main h2, h3{
+  font-family: sans-serif;
+}
+
 
   
 /*FOOTER style*/
