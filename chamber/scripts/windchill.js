@@ -11,8 +11,10 @@ function calcWindChill(t, s) {
   let s = document.querySelector(".wind-speed").textContent;
   
   document.querySelector(".wind-chill").textContent = 
-    "Wind Chill: "+calcWindChill(t, s)+"°F";
+    "Wind Chill: "+calcWindChill(t, s)+ "°F";
   
-  document.querySelector(".temp").textContent = t+"°F";
+  document.querySelector(".temp").textContent = t+ "°F";
   
   document.querySelector(".wind-speed").textContent = "Wind Speed: "+s+" MPH";
+
+  

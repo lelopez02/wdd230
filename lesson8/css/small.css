@@ -1,0 +1,249 @@
+/*HEADER style*/
+
+header {
+    justify-content: center;
+    display: flex;
+    
+    align-items: center;
+    background-color: #07354B;
+    margin: 10px;
+  }
+  
+  aside {
+    font-family: "Source Sans Pro", sans-serif;
+    color: yellow;
+    margin: 3px auto;
+    background-color: #07354B;
+    width: 90%;
+    text-align: center;
+    align-self: flex-end;
+    flex-wrap: wrap;
+  }
+  
+  .headings {
+    display: flex;
+    flex-direction: column;
+    margin-left: .5rem;
+  }
+  
+  .headings h1 {
+    font-family: Helvetica, sans-serif;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+  }
+  
+  .logo img {
+    padding: 2px;
+    width: 150px;
+    height: auto;
+  }
+  
+  h1 {
+    font-size: 1em;
+    color: #fff;
+    font-weight: bolder;
+    font-family: "Source Sans Pro", sans-serif;
+  }
+  
+  /*Banner style*/
+  
+  #hide {
+    display: none;
+    margin: auto;
+    border: 1px solid #bbb;
+    background-color: #eee;
+    text-align: center;
+  }
+  
+  #ham {
+    background-color: #07354B;
+    font-size: 1.5rem;
+    padding: .5rem;
+  }
+  
+  #ham :hover {
+    background-color: #07354B;
+  }
+  
+  
+  
+  .navigation {
+    
+    align-self: flex-end;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    background-color: #07354B;
+  }
+  
+  .navigation li {
+    display: none;
+  }
+  
+  .navigation li a {
+    
+    padding: 1rem;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5rem;
+  }
+  
+  .navigation li a:hover {
+    background-color: #FCEB54;
+    box-shadow: 0 0 10px #FCEB54, 0 0 20px #FCEB54, 0 0 30px #FCEB54;
+    font-weight: 700;
+  }
+  
+  .navigation.responsive li {
+    display: block;
+    width: 100%;
+  }
+  
+  .navigation.responsive li a {
+    display: block;
+  }
+  
+  
+  .social {
+    max-width: 30px;
+    order: 3;
+    margin: 5px;
+  }
+  
+  body {
+    width: 100%;
+  }
+  
+/*----------- FORM --------------*/
+
+form fieldset {
+    margin: 2rem 0;
+    border: 1px solid #3f3d53;
+    border-radius: 10px;
+    padding: 0.5rem 2%;
+    font-family: "Nunito", sans-serif;
+}
+
+form legend {
+    color: #445ba9;
+    margin: 0 1rem;
+    padding: 0 0.5rem;
+}
+
+form label.top,
+form div {
+    display: block;
+    padding-top: 1rem;
+    color: #2075ff;
+    font-size: 0.8rem;
+}
+
+form label.top input,
+form label.top select {
+
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #999;
+    border-radius: 4px;
+    padding: 0.75rem;
+    color: #555;
+    width: 100%;
+    max-width: 15rem;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+form label.sbs {
+    display: block;
+    padding: 0.75rem 0;
+    color: #555;
+}
+
+form input.submitBtn {
+    border: none;
+    background-color: #FCEB54;
+    border-radius: 1rem;
+    padding: 0.75rem 1.5rem;
+    margin: 0 0 2rem 2%;
+    width: 96%;
+    max-width: 20rem;
+    box-shadow: 1px 1px 20px black;
+    cursor: pointer;
+
+}
+
+form label.top input:required {
+    border-left: red solid 6px;
+}
+
+form label.top input:required:valid {
+    border-left: green solid 6px;
+}
+
+#comments {
+    width: 80%;
+    height: 70%;
+}
+  
+/*FOOTER style*/
+
+footer {
+    display: flex;
+    background-color: #07354B;
+    width: 100%;
+    text-align: center;
+    padding: 0.5rem 0;
+    color: white;
+  }
+  
+  footer p {
+    color: yellow;
+    margin: 5px;
+  
+  }
+  
+  .footer-info {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    font-family: Helvetica, sans-serif;
+  }
+  
+  .footer-info img {
+    margin-right: 10px;
+    padding: 6px;
+  }
+  
+  .footer-info span {
+    margin-right: 5px;
+  }
+  
+  .footer-info p {
+    width: 100%;
+    margin-top: -120px;
+  }
+  
+  
+  footer a:link,
+  footer a:visited {
+    color: white;
+  }
+  
+  .information {
+    margin-top: 70px;
+    align-items: center;
+  }
+  
+  .information p,
+  a {
+    color: white;
+    font-size: 1rem;
+    align-items: center;
+    font-family: Helvetica, sans-serif;
+  }

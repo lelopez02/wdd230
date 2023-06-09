@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="This is de site to join to the chamber" />
+    <title>Join page Chamber- Leandro Lopez</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&family=Source+Sans+Pro:wght@300&display=swap"
+        rel="stylesheet" />
+    <link rel="icon" href="image/favicon.ico" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css/normalize.css" />
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <picture>
+                <source srcset="image/logo-130.webp" media="(min-width:600px) and (max-width: 899px)">
+                <source srcset="image/logo-170.webp" media="(min-width: 900px)">
+                <img src="image/logo-250.webp" alt="Chamber logo">
+            </picture>
+        </div>
+        <div class="headings">
+            <h1>Buenos Aires Chamber of commerce</h1>
+        </div>
+        <aside></aside>
+        <nav>
+            <button id="ham">&#9776;</button>
+            <ul class="navigation">
+                <li> <a href="chamber/index.html">Home</a></li>
+                <li> <a href="lesson-7/discover.html">Discover</a></li>
+                <li> <a href="">Directory</a></li>
+                <li> <a href="lesson8/join.html">Join</a></li>
+                <li> <a href="">Contact</a></li>
+            </ul>
+
+        </nav>
+        <div class="social">
+            <picture>
+                <source srcset="image/FacebookLogo-30.png" media="(min-width:600px) and (max-width: 899px)">
+                <source srcset="image/FacebookLogo-50.png" media="(min-width: 900px)">
+                <a href="https://www.facebook.com/" class="media"><img src="image/FacebookLogo-50.png"
+                        alt="Facebook logo" id="linkedin"></a>
+            </picture>
+
+            <picture>
+                <source srcset="image/youtube-32.png" media="(min-width:600px) and (max-width: 899px)">
+                <source srcset="image/youtube-64.png" media="(min-width: 900px)">
+                <a href="https://www.youtube.com/" target="_blank"><img src="image/youtube-64.png" alt="You Tube logo"
+                        id="youtube"></a>
+            </picture>
+        </div>
+    </header>
+    <main>
+
+        <h2>Join Us</h2>
+
+        <div class="container-join">
+            <form method="get" action="thankyou.html">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label class="top">Name*
+                        <input type="text" name="fname" pattern="[A-Za-z]{5,}" required /></label>
+                    <label class="top">Usurname*
+                        <input type="text" name="fusurname" pattern="[A-Za-z]{5,}" required /></label>
+                    <label class="top">Phone*
+                        <input type="tel" name="phone" placeholder="999999999" required /></label>
+                    <label class="top">Email
+                        <input type="email" name="email" placeholder="someone@gmail.com" /></label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Bussiness Details</legend>
+
+                    <label for="bussinessList" class="top">Business Name/Title <input list="bussinessList"
+                            name="bussiness" /></label>
+                    <datalist id="Administrator">
+                        <option value="developer"></option>
+                        <option value="graphic designer"></option>
+                        <option value="Accountant"></option>
+                        <option value="Tourism technician"></option>
+                        <option value="Architect"></option>
+                    </datalist>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Membership Level</legend>
+
+                    <label class="sbs"><input type="radio" name="audience" value="Non-Profit" />
+                        Non-Profit Membership: Non profit organizations and there is no
+                        fee.
+                    </label>
+                    <label class="sbs"><input type="radio" name="audience" value="Bronze" /> Bronze
+                        Membership: $5 per month</label>
+                    <label class="sbs"><input type="radio" name="audience" value="Silver" /> Silver
+                        Membership: $10 per month</label>
+                    <label class="sbs"><input type="radio" name="audience" value="Gold" /> Gold
+                        Membership: $15 per month</label>
+
+                    <label class="top">Submmit</label><textarea id="comments" name="comments"></textarea>
+                </fieldset>
+
+                <input type="submit" value="Submmit" class="submitBtn" />
+            </form>
+
+            <section id="description">
+                <h2>Membership Level Benifits</h2>
+                <h3>NP Membership</h3>
+                <ul class="benefits">
+                    <li>Is for non profit organizations and there is no fee.</li>
+                </ul>
+                <h3>Gold</h3>
+                <ul class="benefits">
+                    <li>Partner sales cards and product family guides</li>
+                    <li>Access to private forum</li>
+                    <li>Access to explusice blog for members</li>
+                    <li>Live chat assistance</li>
+                    <li>Trainings</li>
+                </ul>
+                <h3>Silver</h3>
+                <ul class="benefits">
+                    <li>ACCESS TO DISCOUNTS</li>
+                    <li>Access to specific cousrses at a discount</li>
+                    <li>Access to annual submmit</li>
+                    <li>Program membership certificate/badge</li>
+                    <li>Trainings</li>
+                </ul>
+                <h3>Bronze</h3>
+                <ul class="benefits">
+                    <li>Acces to Video Platform</li>
+                    <li>Access to specific cousrses at a discount</li>
+                    <li>Launch notifications</li>
+                    <li>Program membership certificate/badge</li>
+                </ul>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-info">
+            <picture>
+                <source srcset="image/Logo-130.webp" media="(min-width:600px) and (max-width: 899px)">
+                <source srcset="image/logo-200.webp" media="(min-width: 900px)">
+                <img src="image/logo-50.webp" alt="Chamber logo">
+            </picture>
+            &copy;
+            <span id="#copyrightYear"></span>
+            <span>| Leandro Lopez | Bs.As. Argentina |</span>
+            <p>Last update: <span id="currentdatetime"></span></p>
+        </div>
+        <div class="information">
+            <p>chamberinfo@commerce.ba</p>
+            <p>+54 0000-0000</p>
+            <a href="https://www.google.com.ar/maps/place/Obelisco/@-34.6030824,-58.3818689,18.21z/data=!4m6!3m5!1s0x4aa9f0a6da5edb:0x11bead4e234e558b!8m2!3d-34.6037389!4d-58.3815704!16zL20vMDM1Z2pi"
+                style="text-decoration: none;">Location Map🚩</a>
+        </div>
+
+    </footer>
+</body>
+
+</html>

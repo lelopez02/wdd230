@@ -1,0 +1,41 @@
+@media only screen and (min-width: 600px) {
+    header {
+        border-radius: 0.5rem;
+    }
+
+    body {
+        padding: 0 25px;
+    }
+
+    #ham {
+        background-color: #07354B;
+        font-size: 1.5rem;
+        padding: .5rem;
+        font-size: 35px;
+    }
+
+    .social {
+        max-width: 40px;
+    }
+
+    .hide {
+        grid-column: 1/3;
+        grid-row: 1;
+    }
+
+    nav ul {
+        display: flex;
+    }
+
+    nav a {
+        font-size: 1rem;
+    }
+
+    main {
+        display: grid;
+    }
+
+    .container-join {
+        width: 400px;
+    }
+}
