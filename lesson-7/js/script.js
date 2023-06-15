@@ -1,7 +1,3 @@
-
-
-
-
 const imagesDataSrc = document.querySelectorAll("[data-src]");
 
 const imgOptions = {};

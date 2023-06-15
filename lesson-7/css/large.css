@@ -60,4 +60,8 @@
       main picture img{
         width: 700px;
       }
+
+	  img:hover {
+		box-shadow: 0 0 50px #333;
+	  }
 }

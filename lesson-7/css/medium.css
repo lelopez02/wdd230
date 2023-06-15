@@ -35,6 +35,10 @@
         align-items: center;
       }
 
+      img:hover {
+        box-shadow: 0 0 50px #333;
+      }
+
       main {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
