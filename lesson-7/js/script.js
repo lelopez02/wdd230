@@ -28,15 +28,6 @@ if ("IntersectionObserver" in window) {
     });
 }
 
-//responsive ham
-
-const hamButton = document.querySelector('#ham');
-const navi = document.querySelector('.navi');
-
-
-hamButton.addEventListener('click', () => {
-  navi.classList.toggle("responsive");
-});
 
 //current date on header
 
@@ -54,6 +45,16 @@ const fulldateUK = new Intl.DateTimeFormat("en-UK", {
   dateStyle: "full"
 }).format(now);
 
+
+//responsive ham
+
+const hamButton = document.querySelector('#ham');
+const navi = document.querySelector('.navi');
+
+
+hamButton.addEventListener('click', () => {
+  navi.classList.toggle("responsive");
+});
 
 
 //current date on footer
