@@ -3,7 +3,7 @@
 header {
     justify-content: center;
     display: flex;
-    
+    position: relative;
     align-items: center;
     background-color: #07354B;
     margin: 10px;
@@ -28,6 +28,7 @@ header {
   
   .headings h1 {
     font-family: Helvetica, sans-serif;
+    color: #fff;
   }
   
   .logo {
@@ -104,6 +105,22 @@ header {
     display: block;
   }
   
+  .social {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+  }
+  
+  .social picture {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .social img {
+    max-width: 100%;
+    height: auto;
+  }
   
   .social {
     max-width: 30px;

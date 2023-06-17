@@ -1,0 +1,67 @@
+{
+  "empresas": [
+    {
+      "nombre": "MercadoLibre",
+      "direccion": "Arias 3751, C1430CRG CABA",
+      "telefono": "+54 11 4640-8000",
+      "url": "https://www.mercadolibre.com.ar",
+      "logo": "ruta_del_logo_mercadolibre.png"
+    },
+    {
+      "nombre": "Globant",
+      "direccion": "Humboldt 1550, C1414CTJ CABA",
+      "telefono": "+54 11 4109-1700",
+      "url": "https://www.globant.com",
+      "logo": "ruta_del_logo_globant.png"
+    },
+    {
+      "nombre": "Despegar.com",
+      "direccion": "Av. del Libertador 1425, C1011ABB CABA",
+      "telefono": "+54 11 5274-5353",
+      "url": "https://www.despegar.com",
+      "logo": "ruta_del_logo_despegar.png"
+    },
+    {
+      "nombre": "YPF",
+      "direccion": "Macacha Güemes 515, C1106BKF CABA",
+      "telefono": "+54 11 5441-5000",
+      "url": "https://www.ypf.com",
+      "logo": "ruta_del_logo_ypf.png"
+    },
+    {
+      "nombre": "Banco Galicia",
+      "direccion": "Tte. Gral. Juan Domingo Perón 430, C1038AAH CABA",
+      "telefono": "+54 11 4347-3500",
+      "url": "https://www.bancogalicia.com",
+      "logo": "ruta_del_logo_bancogalicia.png"
+    },
+    {
+      "nombre": "Telecom Argentina",
+      "direccion": "Alicia Moreau de Justo 50, C1107AAK CABA",
+      "telefono": "+54 11 4968-4000",
+      "url": "https://www.telecom.com.ar",
+      "logo": "ruta_del_logo_telecom.png"
+    },
+    {
+      "nombre": "Santander Río",
+      "direccion": "Bartolomé Mitre 480, C1036AAJ CABA",
+      "telefono": "+54 11 4340-6000",
+      "url": "https://www.santander.com.ar",
+      "logo": "ruta_del_logo_santander.png"
+    },
+    {
+      "nombre": "Accenture",
+      "direccion": "Av. Leandro N. Alem 1134, C1001AAT CABA",
+      "telefono": "+54 11 4136-5000",
+      "url": "https://www.accenture.com",
+      "logo": "ruta_del_logo_accenture.png"
+    },
+    {
+      "nombre": "PwC Argentina",
+      "direccion": "Pte. Luis Sáenz Peña 541, C1035AAK CABA",
+      "telefono": "+54 11 4850-6000",
+      "url": "https://www.pwc.com.ar",
+      "logo": "ruta_del_logo_pwc.png"
+    }
+  ]
+}
