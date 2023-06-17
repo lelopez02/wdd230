@@ -1,4 +1,6 @@
-fetch('data.json')
+const requestURL =
+"https://github.com/lelopez02/wdd230/blob/main/lesson9/data.json"
+fetch(requestURL)
   .then(response => response.json())
   .then(data => {
     const empresasLista = document.getElementById('companies-list');
