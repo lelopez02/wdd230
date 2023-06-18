@@ -92,7 +92,7 @@ header {
   
   .navigation li a:hover {
     background-color: #FCEB54;
-    box-shadow: 0 0 10px #FCEB54, o o 20px #FCEB54, 0 0 30px #FCEB54;
+    box-shadow: 0 0 10px #FCEB54, 0 0 20px #FCEB54, 0 0 30px #FCEB54;
     font-weight: 700;
   }
   
@@ -106,11 +106,9 @@ header {
   }
   
   .social {
-    position: absolute;
-    top: 50%;
-    right: 20px;
-    transform: translateY(-50%);
+    width: 90%;
   }
+  
   
   .social picture {
     display: inline-block;
