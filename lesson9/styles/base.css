@@ -3,7 +3,7 @@
 header {
   justify-content: center;
   display: flex;
-  
+
   align-items: center;
   background-color: #07354B;
   margin: 10px;
@@ -27,7 +27,10 @@ aside {
 }
 
 .headings h1 {
-  font-family: Helvetica, sans-serif;
+  font-size: 2.5rem;
+  color: #fff;
+  font-weight: bolder;
+  font-family: "helvetica", sans-serif;
 }
 
 .logo {
@@ -42,12 +45,7 @@ aside {
   height: auto;
 }
 
-h1 {
-  font-size: 1em;
-  color: #fff;
-  font-weight: bolder;
-  font-family: "Source Sans Pro", sans-serif;
-}
+
 
 /*Banner style*/
 
@@ -72,7 +70,7 @@ h1 {
 
 
 .navigation {
-  
+
   align-self: flex-end;
   width: 100%;
   display: flex;
@@ -86,7 +84,7 @@ h1 {
 }
 
 .navigation li a {
-  
+
   padding: 1rem;
   display: block;
   text-align: center;
@@ -112,13 +110,65 @@ h1 {
 
 
 .social {
-  max-width: 30px;
-  order: 3;
-  margin: 5px;
+  width: 90%;
 }
 
 body {
   width: 100%;
+}
+
+
+/* Companies information and style*/
+
+
+body ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 15px;
+  list-style: none;
+}
+
+body ul li {
+  text-align: center;
+  box-shadow: 0 0 5px #333;
+  background-color: #07354B;
+}
+
+/*Main title*/
+
+body h1 {
+  font-size: 3rem;
+  color: #07354B;
+  font-weight: bolder;
+  font-family: "Source Sans Pro", sans-serif;
+  text-align: center;
+}
+
+/*company name, phone, and image style*/
+
+h3 {
+  color: #FCEB54;
+  text-shadow: 2px 3px 10px white;
+  font-weight: bolder;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 2rem;
+}
+
+p {
+  color: #eee;
+  font-family: Helvetica, sans-serif;
+  font-size: 1rem;
+}
+
+a {
+  color: #FCEB54;
+  font-family: Helvetica, sans-serif;
+  text-decoration: none;
+}
+
+img {
+  width: 90%;
+  box-shadow: 0 0 7px rgb(34, 34, 34);
 }
 
 /*FOOTER style*/

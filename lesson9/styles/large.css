@@ -46,4 +46,17 @@
 
 	}
 
+	#empresas-lista {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 20px;
+	  }
+	  
+	  a {
+		color: #FCEB54;
+		font-family: Helvetica, sans-serif;
+		font-size: 1.5rem;
+		text-decoration: none;
+	  }
+
 }

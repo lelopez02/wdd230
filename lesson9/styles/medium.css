@@ -30,4 +30,9 @@
     font-size: 1rem;
   }
 
+  #empresas-lista {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+
 }
