@@ -50,14 +50,14 @@
             <picture>
                 <source srcset="image/FacebookLogo-30.png" media="(min-width:600px) and (max-width: 899px)">
                 <source srcset="image/FacebookLogo-50.png" media="(min-width: 900px)">
-                <a href="https://www.facebook.com/" class="media"><img src="image/FacebookLogo-50.png"
+                <a href="https://www.facebook.com/" class="social-media"><img src="image/FacebookLogo-30.png"
                         alt="Facebook logo" id="linkedin"></a>
             </picture>
 
             <picture>
                 <source srcset="image/youtube-32.png" media="(min-width:600px) and (max-width: 899px)">
                 <source srcset="image/youtube-64.png" media="(min-width: 900px)">
-                <a href="https://www.youtube.com/" target="_blank"><img src="image/youtube-64.png" alt="You Tube logo"
+                <a href="https://www.youtube.com/" class="2nd-sm"><img src="image/youtube-32.png" alt="You Tube logo"
                         id="youtube"></a>
             </picture>
         </div>
@@ -133,23 +133,26 @@
             </section>
         </section>
     </main>
-    <footer>
-        <div class="footer-info">
+    <footer >
+        <div id="footer-info">
             <picture>
                 <source srcset="image/Logo-130.webp" media="(min-width:600px) and (max-width: 899px)">
-                <source srcset="image/logo-200.webp" media="(min-width: 900px)">
-                <img src="image/logo-50.webp" alt="Chamber logo">
+                <source srcset="image/logo-170.webp" media="(min-width: 900px)">
+                <img src="image/logo-200.webp" alt="Chamber logo">
             </picture>
-            &copy;
-            <span id="#copyrightYear"></span>
-            <span>| Leandro Lopez | Bs.As. Argentina |</span>
-            <p>Last update: <span id="currentdatetime"></span></p>
+            <h2>Buenos Aires Chamber of Commerce</h2>
         </div>
-        <div class="information">
+        <div id="information">
             <p>chamberinfo@commerce.ba</p>
             <p>+54 0000-0000</p>
             <a href="https://www.google.com.ar/maps/place/Obelisco/@-34.6030824,-58.3818689,18.21z/data=!4m6!3m5!1s0x4aa9f0a6da5edb:0x11bead4e234e558b!8m2!3d-34.6037389!4d-58.3815704!16zL20vMDM1Z2pi"
                 style="text-decoration: none;">Location Map🚩</a>
+        </div>
+        <div id="direction-footer">
+            <br>
+            &copy; <p id= "#copyrightYear"></p>
+            <p>Leandro Lopez | Bs.As. Argentina |</p>
+            <p id="currentdatetime"></p>
         </div>
 
     </footer>

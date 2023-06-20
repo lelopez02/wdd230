@@ -42,6 +42,7 @@ try {
 
 //copyright on footer
 let date = new Date();
+
 document.getElementById("#copyrightYear").textContent = date.getFullYear();
 
 
@@ -53,12 +54,14 @@ datefieldUK.innerHTML = `<em>${fulldateUK}</em>`;
 //BANNER code
 
 const banner = () => {
-	document.querySelector(".hide").style.display = "block";
-  };
+  document.querySelector(".hide").style.display = "block";
+};
 
-  
-  if (dayNumber === 1 || dayNumber === 2) {
-	banner();
-  }
-  
-  console.log (dayNumber);
+const currentDate = new Date();
+const dayNumber = currentDate.getDay();
+
+if (dayNumber === 1 || dayNumber === 2) {
+  banner();
+}
+
+console.log(dayNumber);
