@@ -210,13 +210,18 @@ main div {
   background-color: #07354B;
 }
 
-.temp-div picture img {
-  width: 40%;
-  grid-row: 2/3;
+
+
+#weather-icon {
+  background-color: #fff;
+  max-width: 80px;
 }
 
-.temp-div picture {
-  margin: auto;
+figcaption {
+  color: #fff;
+  font-size: 2.5rem;
+  font-family: Helvetica, sans-serif;
+
 }
 
 .weather h2,
@@ -346,7 +351,7 @@ footer p {
 }
 
 
-footer img{
+footer img {
   max-width: 180px;
   max-height: 180px;
 }
