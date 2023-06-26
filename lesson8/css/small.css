@@ -123,6 +123,16 @@ header {
   
 /*----------- FORM --------------*/
 
+.thanks {
+  text-align: center;
+  background-color:#3f3d53;
+  color: #fff;
+  font-family: Helvetica, sans-serif;
+  padding: 2rem;
+  margin: 2rem;
+  border: 5px solid #dbd146;
+}
+
 form fieldset {
     margin: 2rem 0;
     border: 1px solid #3f3d53;
@@ -204,56 +214,46 @@ main h2, h3{
 /*FOOTER style*/
 
 footer {
-    display: flex;
-    background-color: #07354B;
-    width: 100%;
-    text-align: center;
-    padding: 0.5rem 0;
-    color: white;
-  }
-  
-  footer p {
-    color: yellow;
-    margin: 5px;
-  
-  }
-  
-  .footer-info {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    font-family: Helvetica, sans-serif;
-  }
-  
-  .footer-info img {
-    margin-right: 10px;
-    padding: 6px;
-  }
-  
-  .footer-info span {
-    margin-right: 5px;
-  }
-  
-  .footer-info p {
-    width: 100%;
-    margin-top: -120px;
-  }
-  
-  
-  footer a:link,
-  footer a:visited {
-    color: white;
-  }
-  
-  .information {
-    margin-top: 70px;
-    align-items: center;
-  }
-  
-  .information p,
-  a {
-    color: white;
-    font-size: 1rem;
-    align-items: center;
-    font-family: Helvetica, sans-serif;
-  }
+  display: flex;
+  background-color: #07354B;
+  width: 100%;
+  text-align: center;
+  padding: 0.5rem 0;
+  color: white;
+}
+
+#footer-info {
+  font-family: Helvetica, sans-serif;
+}
+
+
+footer div {
+  text-align: center;
+}
+
+
+footer p {
+  color: yellow;
+  margin: 5px;
+
+}
+
+
+footer img {
+  max-width: 180px;
+  max-height: 180px;
+}
+
+footer a:link,
+footer a:visited {
+  color: white;
+}
+
+
+#information p,
+a {
+  color: white;
+  font-size: 1rem;
+  align-items: center;
+  font-family: Helvetica, sans-serif;
+}

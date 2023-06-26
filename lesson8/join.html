@@ -72,12 +72,14 @@
                     <legend>Personal Information</legend>
                     <label class="top">Name*
                         <input type="text" name="fname" pattern="[A-Za-z]{5,}" required /></label>
-                    <label class="top">Usurname*
-                        <input type="text" name="fusurname" pattern="[A-Za-z]{5,}" required /></label>
+                    <label class="top">Last name*
+                        <input type="text" name="fname" pattern="[A-Za-z]{5,}" required /></label>
+                    <label class="top">Business position/title*
+                        <input type="text" name="fname" pattern="[A-Za-z]{5,}" required /></label>
                     <label class="top">Phone*
                         <input type="tel" name="phone" placeholder="999999999" required /></label>
-                    <label class="top">Email
-                        <input type="email" name="email" placeholder="someone@gmail.com" /></label>
+                    <label class="top">Email*
+                        <input type="email" name="email" placeholder="someone@gmail.com" required /></label>
                 </fieldset>
 
                 <fieldset>
@@ -85,6 +87,7 @@
 
                     <label for="bussinessList" class="top">Business Name/Title <input list="bussinessList"
                             name="bussiness" /></label>
+                    <label class="top">Business description</label><textarea id="comments" name="comments"></textarea>
                     <datalist id="Administrator">
                         <option value="developer"></option>
                         <option value="graphic designer"></option>
@@ -147,22 +150,25 @@
         </div>
     </main>
     <footer>
-        <div class="footer-info">
+        <div id="footer-info">
             <picture>
                 <source srcset="image/Logo-130.webp" media="(min-width:600px) and (max-width: 899px)">
-                <source srcset="image/logo-200.webp" media="(min-width: 900px)">
-                <img src="image/logo-50.webp" alt="Chamber logo">
+                <source srcset="image/logo-170.webp" media="(min-width: 900px)">
+                <img src="image/logo-200.webp" alt="Chamber logo">
             </picture>
-            &copy;
-            <span id="#copyrightYear"></span>
-            <span>| Leandro Lopez | Bs.As. Argentina |</span>
-            <p>Last update: <span id="currentdatetime"></span></p>
+            <h2>Buenos Aires Chamber of Commerce</h2>
         </div>
-        <div class="information">
+        <div id="information">
             <p>chamberinfo@commerce.ba</p>
             <p>+54 0000-0000</p>
             <a href="https://www.google.com.ar/maps/place/Obelisco/@-34.6030824,-58.3818689,18.21z/data=!4m6!3m5!1s0x4aa9f0a6da5edb:0x11bead4e234e558b!8m2!3d-34.6037389!4d-58.3815704!16zL20vMDM1Z2pi"
                 style="text-decoration: none;">Location Map🚩</a>
+        </div>
+        <div id="direction-footer">
+            <br>
+            &copy; <p id="#copyrightYear"></p>
+            <p>Leandro Lopez | Bs.As. Argentina |</p>
+            <p id="currentdatetime"></p>
         </div>
 
     </footer>

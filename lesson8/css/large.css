@@ -56,4 +56,27 @@
         margin: 0 auto;
     }
 
+    footer {
+        display: grid;
+        grid-template-columns: auto auto;
+		
+    }
+
+	#footer-info{
+		display: grid;
+		grid-template-columns: 250px 300px;
+		
+	}
+
+
+	footer img {
+        max-width: 200px;
+    }
+
+	#direction-footer{
+		justify-self: right;
+		display: flex;
+		flex-wrap: wrap;
+	}
+
 }
