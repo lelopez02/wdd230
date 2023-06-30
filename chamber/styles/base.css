@@ -164,7 +164,7 @@ main div {
   font-family: Helvetica, sans-serif;
 }
 
-.action input {
+#action-but {
   bottom: 20px;
   right: 50px;
   border-style: none;
@@ -172,9 +172,10 @@ main div {
   padding: 15px 20px;
   border-radius: 4px;
   position: absolute;
+  text-decoration: none;
 }
 
-.action input:hover {
+#action-but:hover {
   background-color: #ffff00
 }
 
