@@ -173,6 +173,7 @@ main div {
   border-radius: 4px;
   position: absolute;
   text-decoration: none;
+  color: #07354B;
 }
 
 #action-but:hover {
@@ -243,11 +244,13 @@ h3 {
   font-size: 1.5rem;
 }
 
-.join input {
+.join a {
   background-color: #FCEB54;
   padding: 15px 20px;
   border-radius: 4px;
   font-family: Helvetica, sans-serif;
+  color: #07354B;
+  text-decoration: none;
 }
 
 .join input:hover {
