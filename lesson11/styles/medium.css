@@ -1,0 +1,36 @@
+@media only screen and (min-width: 600px) {
+  header {
+    border-radius: 0.5rem;
+  }
+
+  body {
+    padding: 0 25px;
+  }
+
+  #ham {
+    background-color: #07354B;
+    font-size: 1.5rem;
+    padding: .5rem;
+    font-size: 35px;
+  }
+
+  .social {
+    max-width: 40px;
+  }
+
+  nav ul {
+    display: flex;
+  }
+
+  nav a {
+    font-size: 1rem;
+  }
+
+
+  footer img {
+    float: left;
+    max-width: 240px;
+  }
+
+
+}
