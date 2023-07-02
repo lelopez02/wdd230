@@ -231,3 +231,14 @@ footer {
     align-items: center;
     font-family: Helvetica, sans-serif;
   }
+
+  #visit{
+    display: block;
+    font-size: .75rem;
+  }
+  
+  #visit h3 {
+    font-size: 1rem;
+    font-weight: bolder;
+    font-family: "Source Sans Pro", sans-serif;
+  }

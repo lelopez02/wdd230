@@ -65,3 +65,19 @@ if (dayNumber === 1 || dayNumber === 2) {
 }
 
 console.log(dayNumber);
+
+
+  // last visit.
+
+  const msToDays = 86400000; 
+  const numDays = document.querySelector(".number-days");
+  const dateLastVisit = window.localStorage.getItem("lastVisit");
+  const msDateNow = Date.now();
+  const totalDays = (msDateNow - dateLastVisit) / msToDays;
+  let numVisits = Number(window.localStorage.getItem("visits-ls"));
+  
+  localStorage.setItem("visits-ls", numVisits + 1); 
+  window.localStorage.setItem("lastVisit", msDateNow.toString());
+  
+  numDays.textContent = totalDays.toFixed(0);
+  
