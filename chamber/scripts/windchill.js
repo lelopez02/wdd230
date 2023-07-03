@@ -4,7 +4,7 @@
  const weatherIcon = document.querySelector('#weather-icon');
  const captionDesc = document.querySelector('figcaption');
  
- const url = 'http://api.openweathermap.org/data/2.5/weather?q=Buenos%20Aires&appid=50734d1b6619a0191aa86cbbb7fc65a7&units=metric';
+ const url = 'https://api.openweathermap.org/data/2.5/weather?q=Buenos%20Aires&appid=50734d1b6619a0191aa86cbbb7fc65a7&units=metric';
  
  async function apiFetch() {
      try {
