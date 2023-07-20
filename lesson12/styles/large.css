@@ -1,0 +1,154 @@
+@media only screen and (min-width: 900px) {
+  header h1 {
+    font-size: 40px;
+  }
+
+  nav button {
+    display: none;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: center;
+  }
+
+  .social-media {
+    max-width: 50px;
+  }
+
+  header img {
+    max-width: 200px;
+  }
+
+  nav ul li a {
+    border-top: none;
+    padding: 5px 30px;
+    flex-wrap: wrap;
+    border-right: 1px solid;
+    border-color: rgba(0, 0, 0, 0.3);
+  }
+
+  nav ul li:nth-child(1) {
+    border-left: 1px solid;
+    border-color: rgba(0, 0, 0, 0.3);
+  }
+
+  body {
+    max-width: 1600px;
+    margin: auto;
+  }
+
+  #smoothies {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  /*
+      #smoothies img {
+        width: 100%;
+        height: auto;
+      }
+
+      #beach-city {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: row;
+      }
+      
+      #beach-city picture {
+        margin-left: auto;
+      }
+      
+      #beach-city img {
+        max-width: 100%;
+        height: auto;
+      }*/
+
+  #beach-city {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #beach-city img {
+    order: 2;
+    width: 60%;
+    /* Ajustar el ancho de la imagen */
+  }
+
+  #beach-city p {
+    order: 1;
+    width: 50%;
+    /* Ajustar el ancho del párrafo */
+  }
+
+  #Fresh {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row-reverse;
+  }
+
+  #Fresh p {
+    margin-right: auto;
+    text-align: right;
+  }
+
+  #Fresh a {
+    margin-right: auto;
+  }
+
+  #Fresh picture {
+    margin-right: 20px;
+  }
+
+  #Fresh img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /*US style page*/
+
+  #history {
+    order: 1;
+    text-align: center;
+  }
+
+  #location {
+    order: 2;
+    text-align: center;
+  }
+
+  #contact {
+    order: 3;
+    text-align: center;
+  }
+
+  #relevant-content {
+    order: 3;
+    text-align: center;
+  }
+
+  /* FOOTER style in LARGE size*/
+
+  #main-info {
+    grid-template-columns: 250px 300px;
+    margin-left: auto;
+  }
+
+  #class-info p#lastModified {
+    margin: 5px 5px;
+  }
+
+  footer h2 {
+    font-size: 30px;
+  }
+
+  footer img {
+    max-width: 270px;
+  }
+
+}

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="This is the final project of course WDD 230" />
+    <title>Fresh Page - Specialty Drink Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&family=Source+Sans+Pro:wght@300&display=swap"
+        rel="stylesheet" />
+    <link rel="icon" href="image/faviconfruit.ico" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css/normalize.css" />
+    <link rel="stylesheet" href="styles/small.css" />
+    <link rel="stylesheet" href="styles/medium.css" />
+    <link rel="stylesheet" href="styles/large.css" />
+</head>
+
+<body>
+    <header>
+        <h1>Bountiful Foods</h1>
+        <picture>
+            <source srcset="image/logo-50.webp" media="(min-width:600px) and (max-width: 899px)">
+            <source srcset="image/logo-150.webp" media="(min-width: 900px)">
+            <img src="image/logo-250.webp" alt="Bountiful Foods logo">
+        </picture>
+        <a href="https://www.facebook.com" class="social-media" id="first-social-media">
+            <picture>
+                <source srcset="image/FaceLogo-40.png" media="(min-width:600px) and (max-width: 899px)">
+                <source srcset="image/FaceLogo-50.png" media="(min-width: 900px)">
+                <img src="images/FaceLogo-30.png" alt="Facebook logo">
+            </picture>
+        </a>
+        <a href="https://twitter.com" class="social-media">
+            <picture>
+                <source srcset="image/TwitLogo-40.png" media="(min-width:600px) and (max-width: 899px)">
+                <source srcset="image/TwitLogo-50.png" media="(min-width: 900px)">
+                <img src="image/TwitLogo-30.png" alt="Twitter logo">
+            </picture>
+        </a>
+        <a href="https://www.youtube.com/" class="social-media" class="2nd-sm">
+            <picture>
+                <source srcset="image/youtube-40.png" media="(min-width:600px) and (max-width: 899px)">
+                <source srcset="image/youtube-50.png" media="(min-width: 900px)">
+                <img src="image/youtube-30.png" alt="You Tube logo" id="youtube">
+            </picture>
+        </a>
+        <nav>
+            <button id="hamButton">&#9776;</button>
+            <ul id="Nav">
+                <li><a href="final.html">Home</a></li>
+                <li><a href="fresh.html">Fresh</a></li>
+                <li><a href="us.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <body>
+        <main>
+            <h1>Build Your Own Specialty Drink</h1>
+            <form id="drinkForm">
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" required><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" required><br>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" required><br>
+
+                <label for="fruit1">Fruit 1:</label>
+                <select id="fruit1" required></select><br>
+
+                <label for="fruit2">Fruit 2:</label>
+                <select id="fruit2" required></select><br>
+
+                <label for="fruit3">Fruit 3:</label>
+                <select id="fruit3" required></select><br>
+
+                <label for="specialInstructions">Special Instructions:</label><br>
+                <textarea id="specialInstructions" rows="4" cols="50"></textarea><br>
+
+                <button type="button" onclick="submitForm()">Submit</button>
+            </form>
+
+            <div id="outputArea" style="display: none;">
+                <h2>Your Order Details:</h2>
+                <p><strong>First Name:</strong> <span id="outputFirstName"></span></p>
+                <p><strong>Email:</strong> <span id="outputEmail"></span></p>
+                <p><strong>Phone Number:</strong> <span id="outputPhone"></span></p>
+                <p><strong>Fruit 1:</strong> <span id="outputFruit1"></span></p>
+                <p><strong>Fruit 2:</strong> <span id="outputFruit2"></span></p>
+                <p><strong>Fruit 3:</strong> <span id="outputFruit3"></span></p>
+                <p><strong>Special Instructions:</strong> <span id="outputSpecialInstructions"></span></p>
+                <p><strong>Order Date:</strong> <span id="outputOrderDate"></span></p>
+                <p><strong>Total Nutritional Information:</strong></p>
+                <ul id="outputNutritionalInfo"></ul>
+            </div>
+        </main>
+        <footer>
+            <div id="main-info">
+                <picture>
+                    <source srcset="image/logo-50.webp" media="(min-width:600px) and (max-width: 899px)">
+                    <source srcset="image/logo-150.webp" media="(min-width: 900px)">
+                    <img src="image/logo-250.webp" alt="Bountiful Foods logo">
+                </picture>
+                <h2>Bountiful Foods</h2>
+                <p>200 Santa Monica Pier, Santa Monica, CA 90401, Estados Unidos</p>
+            </div>
+            <div id="secondary-info">
+                <p>bountifulfoods@california.org</p>
+                <p>+1 (801) 123-4567</p>
+                <a
+                    href="https://www.google.com/maps/place/Muelle+de+Santa+M%C3%B3nica/@34.0107167,-118.500647,14z/data=!4m6!3m5!1s0x80c2a4d74d5ea79b:0xcd9a111aced18f4d!8m2!3d34.0082821!4d-118.4987585!16zL20vMDRmZ21y?hl=es&entry=ttu">
+                    &#128205; Location Map</a>
+            </div>
+            <div id="class-info">
+                <p id="copyright"></p>
+            </div>
+        </footer>
+        <script src="scripts/fresh.js"></script>
+    </body>
+
+</html>

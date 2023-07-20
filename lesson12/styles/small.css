@@ -1,0 +1,249 @@
+body {
+    background-color: #52b4de;
+    font-family: 'Inter', sans-serif;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #8ad34a;
+    margin-bottom: 10px;
+}
+
+header img {
+    max-width: 70px;
+}
+
+header h1 {
+    margin: 20px 10px;
+    order: 1;
+    font-size: 20px;
+}
+
+.social-media {
+    max-width: 30px;
+    order: 3;
+    margin: 5px;
+}
+
+#first-social-media {
+    margin-left: auto;
+}
+
+
+/*NAV style and organization*/
+
+
+nav {
+    order: 5;
+    align-self: flex-end;
+    width: 100%;
+}
+
+nav ul {
+    display: none;
+    list-style-type: none;
+    padding: 0px;
+    margin: auto;
+}
+
+nav ul.active {
+    display: block;
+}
+
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 25px 20px;
+    border-top: 2px solid rgba(0, 0, 0, 0.5);
+}
+
+nav ul li a:hover {
+    background-color: #ff761b;
+}
+
+nav button {
+    display: block;
+    margin-left: auto;
+    font-size: 30px;
+    border-style: none;
+    background-color: #ff761b;
+    padding: 15px;
+}
+
+/*
+#Fresh a {
+    position: absolute;
+    bottom: 20px;
+    right: 50px;
+    border-style: none;
+    background-color: #b37661;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+}*/
+
+#beach-city picture {
+    width: 100%;
+    height: 100%;
+}
+
+#beach-city p {
+    gap: 30px;
+}
+
+/*smoothie image and buttom*/
+
+#Fresh {
+    position: relative;
+    text-align: center;
+}
+
+/* Estilos para la imagen */
+#Fresh img {
+    width: 100%;
+    /* Ajustar el tamaño de la imagen según el contenedor */
+}
+
+/* Estilos para el botón */
+#Fresh a {
+
+    bottom: 20px;
+    right: 50px;
+    border-style: none;
+    background-color: #044389;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+
+
+/* WEATHER style*/
+
+.weather-card {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-top: 0;
+}
+
+.current-weather p {
+    font-size: 24px;
+}
+
+.forecast {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.forecast-item {
+    flex-basis: calc(33.33% - 10px);
+    margin: 5px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+}
+
+
+/*FRESH page style*/
+
+main {
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    padding:1rem;
+    margin: 2rem;
+    border-radius: 5px;
+    border-style: none;
+    background-color: #8ad34a;
+    color: black;
+}
+
+select, input, button, textarea {
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    margin: 1rem 10px;
+    width: 96%;
+    max-width: 20rem;
+    box-shadow: 1px 1px 10px black;
+}
+
+label {
+    font-family: Helvetica, sans-serif;
+    font-size: 1.3rem;
+}
+
+/*US style page*/
+
+.us h1, #map {
+    font-family: Helvetica, sans-serif;
+    font-size: 2rem;
+}
+
+#history,
+#location,
+#contact,
+#relevant-content
+{
+    background-color: #e7e5e5;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    margin: 1rem 10px;
+    width: 70%;
+    max-width: 100rem;
+    box-shadow: 1px 1px 10px black;
+}
+
+/* FOOTER general style*/
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #8ad34a;
+}
+
+footer img {
+    max-width: 180px;
+}
+
+footer h2 {
+    font-size: 20px;
+    margin: 0px;
+}
+
+footer p {
+    margin: 5px;
+}
+
+footer a {
+    color: black;
+    text-decoration: none;
+}
+
+footer h3 {
+    margin: 0px;
+}
+
+#class-info {
+    margin-top: 20px;
+    text-align: center;
+    border-top: 1px solid;
+    border-color: rgba(0, 0, 0, 0.5);
+    padding-top: 15px;
+    width: 90%;
+}

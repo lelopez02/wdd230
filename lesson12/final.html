@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="This is the final project of course WDD 230" />
+    <title>Bountiful Foods</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&family=Source+Sans+Pro:wght@300&display=swap"
+        rel="stylesheet" />
+    <link rel="icon" href="image/faviconfruit.ico" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css/normalize.css" />
+    <link rel="stylesheet" href="styles/small.css" />
+    <link rel="stylesheet" href="styles/medium.css" />
+    <link rel="stylesheet" href="styles/large.css" />
+</head>
+
+<body>
+    <header>
+        <h1>Bountiful Foods</h1>
+        <picture>
+            <source srcset="image/logo-50.webp" media="(min-width:600px) and (max-width: 899px)">
+            <source srcset="image/logo-150.webp" media="(min-width: 900px)">
+            <img src="image/logo-250.webp" alt="Bountiful Foods logo">
+        </picture>
+        <a href="https://www.facebook.com" class="social-media" id="first-social-media">
+            <picture>
+                <source srcset="image/FaceLogo-40.png" media="(min-width:600px) and (max-width: 899px)">
+                <source srcset="image/FaceLogo-50.png" media="(min-width: 900px)">
+                <img src="image/FaceLogo-30.png" alt="Facebook logo">
+            </picture>
+        </a>
+        <a href="https://twitter.com" class="social-media">
+            <picture>
+                <source srcset="image/TwitLogo-40.png" media="(min-width:600px) and (max-width: 899px)">
+                <source srcset="image/TwitLogo-50.png" media="(min-width: 900px)">
+                <img src="image/TwitLogo-30.png" alt="Twitter logo">
+            </picture>
+        </a>
+        <a href="https://www.youtube.com/" class="social-media">
+            <picture>
+                <source srcset="image/youtube-40.png" media="(min-width:600px) and (max-width: 899px)">
+                <source srcset="image/youtube-50.png" media="(min-width: 900px)">
+                <img src="image/youtube-30.png" alt="You Tube logo" id="youtube">
+            </picture>
+        </a>
+        <nav>
+            <button id="hamButton">&#9776;</button>
+            <ul id="Nav">
+                <li><a href="final.html">Home</a></li>
+                <li><a href="fresh.html">Fresh</a></li>
+                <li><a href="us.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="smoothies">
+            <picture>
+                <source srcset="image/smoothies-1000.jpg" media="(min-width:900px) and (max-width: 2000px)">
+                <source srcset="image/smoothies-600.jpg" media="(min-width: 600px)">
+                <img src="image/smoothies-100.jpg" alt="smoothies fruit">
+            </picture>
+        </div>
+        <div id="beach-city">
+            <p>
+                Santa Monica is a coastal city west of downtown Los Angeles. Santa Monica Beach is surrounded
+                by Palisades
+                Park, overlooking the Pacific Ocean. On the Santa Monica Pier, you will find the Pacific Park amusement
+                park, the Looff Hippodrome Carousel and the Santa Monica Pier Aquarium. Adjacent to the pier is Muscle
+                Beach, an outdoor gymnasium established in the 1930s. Downtown is Bergamot Station, which houses several
+                art
+                galleries.</p>
+            <picture>
+                <source srcset="image/beach-1000.jpeg" media="(min-width:800px) and (max-width: 1000px)">
+                <source srcset="image/beach-400.jpeg" media="(min-width: 600px)">
+                <img src="image/beach-90.jpeg" alt="Santa Monica">
+            </picture>
+        </div>
+        <div id="Fresh">
+
+            <p>Discover the delicious world of fruit drink mixes and create your own refreshing masterpiece!
+                Do you love to
+                enjoy vibrant and natural flavors? Then we invite you to dive into this exciting experience of creation
+                and
+                customization.</p>
+            <a href="fresh.html">Make your own!</a>
+            <picture>
+                <source srcset="image/home-smoo-800.jpg" media="(min-width:800px) and (max-width: 2000px)">
+                <source srcset="image/home-smoo-400.jpg" media="(min-width: 600px)">
+                <img src="image/home-smoo-90.jpg" alt="Smoothies of Santa Monica">
+            </picture>
+
+        </div>
+        <div class="weather-card">
+            <h2>Condiciones Actuales</h2>
+            <div class="current-weather">
+                <p id="temperature"></p>
+                <p id="description"></p>
+                <p id="humidity"></p>
+            </div>
+            <h2>Pronóstico para 3 días</h2>
+            <div class="forecast">
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div id="main-info">
+            <picture>
+                <source srcset="image/logo-50.webp" media="(min-width:600px) and (max-width: 899px)">
+                <source srcset="image/logo-150.webp" media="(min-width: 900px)">
+                <img src="image/logo-250.webp" alt="Bountiful Foods logo">
+            </picture>
+            <h2>Bountiful Foods</h2>
+            <p>200 Santa Monica Pier, Santa Monica, CA 90401, Estados Unidos</p>
+        </div>
+        <div id="secondary-info">
+            <p>bountifulfoods@california.org</p>
+            <p>+1 (801) 123-4567</p>
+            <a
+                href="https://www.google.com/maps/place/Muelle+de+Santa+M%C3%B3nica/@34.0107167,-118.500647,14z/data=!4m6!3m5!1s0x80c2a4d74d5ea79b:0xcd9a111aced18f4d!8m2!3d34.0082821!4d-118.4987585!16zL20vMDRmZ21y?hl=es&entry=ttu">
+                &#128205; Location Map</a>
+        </div>
+        <div id="class-info">
+            <p id="copyright"></p>
+        </div>
+    </footer>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>

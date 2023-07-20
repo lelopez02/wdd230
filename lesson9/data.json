@@ -1,65 +1,65 @@
 {
-  "empresas": [
+  "companies": [
     {
-      "nombre": "MercadoLibre",
-      "direccion": "Arias 3751, C1430CRG CABA",
-      "telefono": "+54 11 4640-8000",
+      "name": "MercadoLibre",
+      "address": "Arias 3751, C1430CRG CABA",
+      "phone": "+54 11 4640-8000",
       "url": "https://www.mercadolibre.com.ar",
       "logo": "https://www.elsoldemexico.com.mx/mexico/2ucv8o-mercado-libre-logo.jpg/alternates/LANDSCAPE_768/mercado%20libre%20logo.jpg"
     },
     {
-      "nombre": "Globant",
-      "direccion": "Humboldt 1550, C1414CTJ CABA",
-      "telefono": "+54 11 4109-1700",
+      "name": "Globant",
+      "address": "Humboldt 1550, C1414CTJ CABA",
+      "phone": "+54 11 4109-1700",
       "url": "https://www.globant.com",
       "logo": "https://statics.globant.com/production/public/2022-08/globant-logo.jpg"
     },
     {
-      "nombre": "Despegar",
-      "direccion": "Av. del Libertador 1425, C1011ABB CABA",
-      "telefono": "+54 11 5274-5353",
+      "name": "Despegar",
+      "address": "Av. del Libertador 1425, C1011ABB CABA",
+      "phone": "+54 11 5274-5353",
       "url": "https://www.despegar.com",
       "logo": "https://media.ambito.com/p/23fcf4962bb763b45876db93c1d732e6/adjuntos/239/imagenes/037/343/0037343878/1200x675/smart/logo-despegarjpg.jpg"
     },
     {
-      "nombre": "YPF",
-      "direccion": "Macacha Güemes 515, C1106BKF CABA",
-      "telefono": "+54 11 5441-5000",
+      "name": "YPF",
+      "address": "Macacha Güemes 515, C1106BKF CABA",
+      "phone": "+54 11 5441-5000",
       "url": "https://www.ypf.com",
       "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Logo_de_YPF.svg/1200px-Logo_de_YPF.svg.png"
     },
     {
-      "nombre": "Banco Galicia",
-      "direccion": "Tte. Gral. Juan Domingo Perón 430, C1038AAH CABA",
-      "telefono": "+54 11 4347-3500",
+      "name": "Banco Galicia",
+      "address": "Tte. Gral. Juan Domingo Perón 430, C1038AAH CABA",
+      "phone": "+54 11 4347-3500",
       "url": "https://www.bancogalicia.com",
       "logo": "https://statics.eleconomista.com.ar/2020/07/614e3c36dfae8.png"
     },
     {
-      "nombre": "Telecom Argentina",
-      "direccion": "Alicia Moreau de Justo 50, C1107AAK CABA",
-      "telefono": "+54 11 4968-4000",
+      "name": "Telecom Argentina",
+      "address": "Alicia Moreau de Justo 50, C1107AAK CABA",
+      "phone": "+54 11 4968-4000",
       "url": "https://www.telecom.com.ar",
       "logo": "https://www.atencionalclienteargentina.org/wp-content/uploads/2021/06/Screenshot_3-2.png"
     },
     {
-      "nombre": "Santander Río",
-      "direccion": "Bartolomé Mitre 480, C1036AAJ CABA",
-      "telefono": "+54 11 4340-6000",
+      "name": "Santander Río",
+      "address": "Bartolomé Mitre 480, C1036AAJ CABA",
+      "phone": "+54 11 4340-6000",
       "url": "https://www.santander.com.ar",
       "logo": "https://gkpb.com.br/wp-content/uploads/2018/03/novo-logo-santander-fundo-vermelho.jpg"
     },
     {
-      "nombre": "Accenture",
-      "direccion": "Av. Leandro N. Alem 1134, C1001AAT CABA",
-      "telefono": "+54 11 4136-5000",
+      "name": "Accenture",
+      "address": "Av. Leandro N. Alem 1134, C1001AAT CABA",
+      "phone": "+54 11 4136-5000",
       "url": "https://www.accenture.com",
       "logo": "https://aecconsultoras.com/wp-content/uploads/2020/01/logo-asociados-accenture.jpg"
     },
     {
-      "nombre": "PwC Argentina",
-      "direccion": "Pte. Luis Sáenz Peña 541, C1035AAK CABA",
-      "telefono": "+54 11 4850-6000",
+      "name": "PwC Argentina",
+      "address": "Pte. Luis Sáenz Peña 541, C1035AAK CABA",
+      "phone": "+54 11 4850-6000",
       "url": "https://www.pwc.com.ar",
       "logo": "https://gerencia-ambiental.com/wp-content/uploads/2020/06/PWC-1440x564_c.jpg"
     }
